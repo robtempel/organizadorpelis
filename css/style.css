@@ -168,11 +168,12 @@ body{
 .info{
   position: absolute;
   left: 510px;
+
 }
 
 .totaldatos{
   position: relative;
-  left: 3px;
+  margin: 3px;
   width: 50px;
 }
 
@@ -188,12 +189,11 @@ body{
 }
 
 .tituloirregular{
-  position: absolute;
-  left: 840px;
+
+  left: 1077px;
 }
 
 .datosirregularidades{
-  position: absolute;
-  left: 953px;
+  margin: 3px;
   width: 80px;
 }
