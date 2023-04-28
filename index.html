@@ -10,10 +10,21 @@
   <body>
     <h1 class="titulo">Organizador de Coleccion de Peliculas y Series</h1>
     <div id="cargadatos" class="cargadatos">
-      <input type="file" id="carpeta" webkitdirectory directory multiple onchange="obtenerRutasCarpeta()">
+      
     </div>
     <div id="cargadatos2" class="cargadatos2">
-      <textarea id="w3review" rows="8" cols="80" class="w3review"></textarea>
+      <textarea id="w3review" rows="15" cols="75" class="w3review"></textarea>
+    </div>
+
+    <div class="comandos2">
+      <input type="button" id="mostrar" value="Mostrar paths">
+      <input type="button" id="estadistica" value="Estadistica">
+      <input type="button" id="ejecutar" value="Ejecutar">
+      <input type="button" id="copiar" value="Copiar">
+      <input type="button" id="eliminard" value="Eliminar duplicados">
+      <input type="button" id="vaciascaja" value="Borrar datos obtenidos">
+      <text class="titulototal">Total datos ingresados</text><input type="text" id="totaldatos" class="totaldatos" value="">
+      <text class="tituloirregular">Irregularidades</text><input type="text" id="irregularidades" class="datosirregularidades" value="">
     </div>
 
     <div id="resultado" class="contenedorResultado">
