@@ -10,6 +10,13 @@ const fragmentoshdex4 = []
 const fragmentoshdex5 = []
 const fragmentoshdex6 = []
 const fragmentoshdex7 = []
+const hdex1raiz = []
+const hdex2raiz = []
+const hdex3raiz = []
+const hdex4raiz = []
+const hdex5raiz = []
+const hdex6raiz = []
+const hdex7raiz = []
 const contadorHDEX1 = []
 const contadorHDEX2 = []
 const contadorHDEX3 = []
@@ -18,41 +25,74 @@ const contadorHDEX5 = []
 const contadorHDEX6 = []
 const contadorHDEX7 = []
 
-
+let datosentregadosdom = document.getElementById("datosentregados")
+datosentregadosdom.value = "0"
 
 let resetcaja = document.getElementById("cargadatos2")
 resetcaja.innerHTML = `<textarea id="w3review" rows="15" cols="46" class="w3review"></textarea>`
 let divisioncargadatos = document.getElementById("cargadatos")
-divisioncargadatos.innerHTML = `<text class="cota1">HDEX1</text><input type="file" id="carpeta1" webkitdirectory directory multiple onchange="recopilar1()" class="entradas"><br>
+divisioncargadatos.innerHTML = `<text class="cota1">HDEX1</text><input type="file" id="carpeta1" webkitdirectory directory multiple class="entradas"><br>
 <text class="cota1">HDEX1 internos</text><input type="file" id="carpeta1b" webkitdirectory directory multiple onchange="recopilar1b()" class="entradas">
 <input type="button" id="borrar1" class="borrar" value="limpiar HDEX1"><text class="info" id="contador1"></text><input type="button" value=">>>" id="incorporar1" class="incorporar">
 <text class="tituloparcial">Entradas HDEX1</text><input type="text" id="totalhdex1" class="cifrasparciales" value=""><br>
-<text class="cota1">HDEX2</text><input type="file" id="carpeta2" webkitdirectory directory multiple onchange="recopilar2()" class="entradas"><br>
+<text class="cota1">HDEX2</text><input type="file" id="carpeta2" webkitdirectory directory multiple class="entradas"><br>
 <text class="cota1">HDEX2 internos</text><input type="file" id="carpeta2b" webkitdirectory directory multiple onchange="recopilar2b()" class="entradas">
 <input type="button" id="borrar2" class="borrar" value="limpiar HDEX2"><text class="info" id="contador2"></text><input type="button" value=">>>" id="incorporar2" class="incorporar">
 <text class="tituloparcial">Entradas HDEX2</text><input type="text" id="totalhdex2" class="cifrasparciales" value=""><br>
-<text class="cota1">HDEX3</text><input type="file" id="carpeta3" webkitdirectory directory multiple onchange="recopilar3()" class="entradas"><br>
+<text class="cota1">HDEX3</text><input type="file" id="carpeta3" webkitdirectory directory multiple class="entradas"><br>
 <text class="cota1">HDEX3 internos</text><input type="file" id="carpeta3b" webkitdirectory directory multiple onchange="recopilar3b()" class="entradas">
 <input type="button" id="borrar3" class="borrar" value="limpiar HDEX3"><text class="info" id="contador3"></text><input type="button" value=">>>" id="incorporar3" class="incorporar">
 <text class="tituloparcial">Entradas HDEX3</text><input type="text" id="totalhdex3" class="cifrasparciales" value=""><br>
-<text class="cota1">HDEX4</text><input type="file" id="carpeta4" webkitdirectory directory multiple onchange="recopilar4()" class="entradas"><br>
+<text class="cota1">HDEX4</text><input type="file" id="carpeta4" webkitdirectory directory multiple class="entradas"><br>
 <text class="cota1">HDEX4 internos</text><input type="file" id="carpeta4b" webkitdirectory directory multiple onchange="recopilar4b()" class="entradas">
 <input type="button" id="borrar4" class="borrar" value="limpiar HDEX4"><text class="info" id="contador4"></text><input type="button" value=">>>" id="incorporar4" class="incorporar">
 <text class="tituloparcial">Entradas HDEX4</text><input type="text" id="totalhdex4" class="cifrasparciales" value=""><br>
-<text class="cota1">HDEX5</text><input type="file" id="carpeta5" webkitdirectory directory multiple onchange="recopilar5()" class="entradas"><br>
+<text class="cota1">HDEX5</text><input type="file" id="carpeta5" webkitdirectory directory multiple class="entradas"><br>
 <text class="cota1">HDEX5 internos</text><input type="file" id="carpeta5b" webkitdirectory directory multiple onchange="recopilar5b()" class="entradas">
 <input type="button" id="borrar5" class="borrar" value="limpiar HDEX5"><text class="info" id="contador5"></text><input type="button" value=">>>" id="incorporar5" class="incorporar">
 <text class="tituloparcial">Entradas HDEX5</text><input type="text" id="totalhdex5" class="cifrasparciales" value=""><br>
-<text class="cota1">HDEX6</text><input type="file" id="carpeta6" webkitdirectory directory multiple onchange="recopilar6()" class="entradas"><br>
+<text class="cota1">HDEX6</text><input type="file" id="carpeta6" webkitdirectory directory multiple class="entradas"><br>
 <text class="cota1">HDEX6 internos</text><input type="file" id="carpeta6b" webkitdirectory directory multiple onchange="recopilar6b()" class="entradas">
 <input type="button" id="borrar6" class="borrar" value="limpiar HDEX6"><text class="info" id="contador6"></text><input type="button" value=">>>" id="incorporar6" class="incorporar">
 <text class="tituloparcial">Entradas HDEX6</text><input type="text" id="totalhdex6" class="cifrasparciales" value=""><br>
-<text class="cota1">HDEX7</text><input type="file" id="carpeta7" webkitdirectory directory multiple onchange="recopilar7()" class="entradas"><br>
+<text class="cota1">HDEX7</text><input type="file" id="carpeta7" webkitdirectory directory multiple class="entradas"><br>
 <text class="cota1">HDEX7 internos</text><input type="file" id="carpeta7b" webkitdirectory directory multiple onchange="recopilar7b()" class="entradas">
 <input type="button" id="borrar7" class="borrar" value="limpiar HDEX7"><text class="info" id="contador7"></text><input type="button" value=">>>" id="incorporar7" class="incorporar">
 <text class="tituloparcial">Entradas HDEX7</text><input type="text" id="totalhdex7" class="cifrasparciales" value=""><br>`
 
 estadistica()
+
+/////////
+/////////
+//HDEX1
+/////////
+/////////
+let incorporar1 = document.getElementById("incorporar1")
+incorporar1.addEventListener("click", () => {
+
+    let hdex1 = document.getElementById("carpeta1").files
+    for(let linea of hdex1){
+        if(linea.webkitRelativePath.includes("DS_Store")){
+
+        }else{
+            let lineaseparada = linea.webkitRelativePath.split("/")
+            fragmentoshdex1.push(lineaseparada[0] + "/" + lineaseparada[1] + "/" + lineaseparada[2])
+        }
+    }
+
+    fragmentoshdex1.sort()
+    eliminarrepetidoshdex1()
+
+    let campo = document.getElementById("w3review")
+    for(let linea of fragmentoshdex1){
+        if(linea.includes("DS_Store")){
+
+        }else{
+            campo.value += linea + "\n"
+        }
+    }
+    estadistica()
+})
 
 function recopilar1b(){
     let hdex1b = document.getElementById("carpeta1b")
@@ -79,7 +119,42 @@ function eliminarrepetidoshdex1(){
     }
     estadistica()
 }
-////////////////
+
+
+
+
+/////////
+/////////
+//HDEX2
+/////////
+/////////
+let incorporar2 = document.getElementById("incorporar2")
+incorporar2.addEventListener("click", () => {
+
+    let hdex2 = document.getElementById("carpeta2").files
+    for(let linea of hdex2){
+        if(linea.webkitRelativePath.includes("DS_Store")){
+
+        }else{
+            let lineaseparada = linea.webkitRelativePath.split("/")
+            fragmentoshdex2.push(lineaseparada[0] + "/" + lineaseparada[1] + "/" + lineaseparada[2])
+        }
+    }
+
+    fragmentoshdex2.sort()
+    eliminarrepetidoshdex2()
+
+    let campo = document.getElementById("w3review")
+    for(let linea of fragmentoshdex2){
+        if(linea.includes("DS_Store")){
+
+        }else{
+            campo.value += linea + "\n"
+        }
+    }
+    estadistica()
+})
+
 function recopilar2b(){
     let hdex2b = document.getElementById("carpeta2b")
     let arrayfiles2 = hdex2b.files
@@ -105,7 +180,42 @@ function eliminarrepetidoshdex2(){
     }
     estadistica()
 }
-////////////////
+
+
+
+
+/////////
+/////////
+//HDEX3
+/////////
+/////////
+let incorporar3 = document.getElementById("incorporar3")
+incorporar3.addEventListener("click", () => {
+
+    let hdex3 = document.getElementById("carpeta3").files
+    for(let linea of hdex3){
+        if(linea.webkitRelativePath.includes("DS_Store")){
+
+        }else{
+            let lineaseparada = linea.webkitRelativePath.split("/")
+            fragmentoshdex3.push(lineaseparada[0] + "/" + lineaseparada[1] + "/" + lineaseparada[2])
+        }
+    }
+
+    fragmentoshdex3.sort()
+    eliminarrepetidoshdex3()
+
+    let campo = document.getElementById("w3review")
+    for(let linea of fragmentoshdex3){
+        if(linea.includes("DS_Store")){
+
+        }else{
+            campo.value += linea + "\n"
+        }
+    }
+    estadistica()
+})
+
 function recopilar3b(){
     let hdex3b = document.getElementById("carpeta3b")
     let arrayfiles3 = hdex3b.files
@@ -131,7 +241,42 @@ function eliminarrepetidoshdex3(){
     }
     estadistica()
 }
-///////////////////
+
+
+
+
+/////////
+/////////
+//HDEX4
+/////////
+/////////
+let incorporar4 = document.getElementById("incorporar4")
+incorporar4.addEventListener("click", () => {
+
+    let hdex4 = document.getElementById("carpeta4").files
+    for(let linea of hdex4){
+        if(linea.webkitRelativePath.includes("DS_Store")){
+
+        }else{
+            let lineaseparada = linea.webkitRelativePath.split("/")
+            fragmentoshdex4.push(lineaseparada[0] + "/" + lineaseparada[1] + "/" + lineaseparada[2])
+        }
+    }
+
+    fragmentoshdex4.sort()
+    eliminarrepetidoshdex4()
+
+    let campo = document.getElementById("w3review")
+    for(let linea of fragmentoshdex4){
+        if(linea.includes("DS_Store")){
+
+        }else{
+            campo.value += linea + "\n"
+        }
+    }
+    estadistica()
+})
+
 function recopilar4b(){
     let hdex4b = document.getElementById("carpeta4b")
     let arrayfiles4 = hdex4b.files
@@ -157,9 +302,44 @@ function eliminarrepetidoshdex4(){
     }
     estadistica()
 }
-///////////////////
+
+
+
+
+/////////
+/////////
+//HDEX5
+/////////
+/////////
+let incorporar5 = document.getElementById("incorporar5")
+incorporar5.addEventListener("click", () => {
+
+    let hdex5 = document.getElementById("carpeta5").files
+    for(let linea of hdex5){
+        if(linea.webkitRelativePath.includes("DS_Store")){
+
+        }else{
+            let lineaseparada = linea.webkitRelativePath.split("/")
+            fragmentoshdex5.push(lineaseparada[0] + "/" + lineaseparada[1] + "/" + lineaseparada[2])
+        }
+    }
+
+    fragmentoshdex5.sort()
+    eliminarrepetidoshdex5()
+
+    let campo = document.getElementById("w3review")
+    for(let linea of fragmentoshdex5){
+        if(linea.includes("DS_Store")){
+
+        }else{
+            campo.value += linea + "\n"
+        }
+    }
+    estadistica()
+})
+
 function recopilar5b(){
-    let hdex5b = document.getElementById("carpeta5b")
+    let hdex1b = document.getElementById("carpeta5b")
     let arrayfiles5 = hdex5b.files
     for(let index of arrayfiles5){
         let path = index.webkitRelativePath
@@ -183,11 +363,46 @@ function eliminarrepetidoshdex5(){
     }
     estadistica()
 }
-////////////////////
+
+
+
+
+/////////
+/////////
+//HDEX6
+/////////
+/////////
+let incorporar6 = document.getElementById("incorporar6")
+incorporar6.addEventListener("click", () => {
+
+    let hdex6 = document.getElementById("carpeta6").files
+    for(let linea of hdex6){
+        if(linea.webkitRelativePath.includes("DS_Store")){
+
+        }else{
+            let lineaseparada = linea.webkitRelativePath.split("/")
+            fragmentoshdex6.push(lineaseparada[0] + "/" + lineaseparada[1] + "/" + lineaseparada[2])
+        }
+    }
+
+    fragmentoshdex6.sort()
+    eliminarrepetidoshdex6()
+
+    let campo = document.getElementById("w3review")
+    for(let linea of fragmentoshdex6){
+        if(linea.includes("DS_Store")){
+
+        }else{
+            campo.value += linea + "\n"
+        }
+    }
+    estadistica()
+})
+
 function recopilar6b(){
     let hdex6b = document.getElementById("carpeta6b")
-    let arrayfiles1 = hdex6b.files
-    for(let index of arrayfiles1){
+    let arrayfiles6 = hdex6b.files
+    for(let index of arrayfiles6){
         let path = index.webkitRelativePath
         let filearray = path.split("/")
         if(filearray.length > 1){
@@ -209,11 +424,46 @@ function eliminarrepetidoshdex6(){
     }
     estadistica()
 }
-/////////////////////
+
+
+
+
+/////////
+/////////
+//HDEX7
+/////////
+/////////
+let incorporar7 = document.getElementById("incorporar7")
+incorporar7.addEventListener("click", () => {
+
+    let hdex7 = document.getElementById("carpeta7").files
+    for(let linea of hdex7){
+        if(linea.webkitRelativePath.includes("DS_Store")){
+
+        }else{
+            let lineaseparada = linea.webkitRelativePath.split("/")
+            fragmentoshdex7.push(lineaseparada[0] + "/" + lineaseparada[1] + "/" + lineaseparada[2])
+        }
+    }
+
+    fragmentoshdex7.sort()
+    eliminarrepetidoshdex7()
+
+    let campo = document.getElementById("w3review")
+    for(let linea of fragmentoshdex7){
+        if(linea.includes("DS_Store")){
+
+        }else{
+            campo.value += linea + "\n"
+        }
+    }
+    estadistica()
+})
+
 function recopilar7b(){
     let hdex7b = document.getElementById("carpeta7b")
-    let arrayfiles1 = hdex7b.files
-    for(let index of arrayfiles1){
+    let arrayfiles7 = hdex7b.files
+    for(let index of arrayfiles7){
         let path = index.webkitRelativePath
         let filearray = path.split("/")
         if(filearray.length > 1){
@@ -235,7 +485,15 @@ function eliminarrepetidoshdex7(){
     }
     estadistica()
 }
-//////////////////
+
+/////////////
+/////////////
+/////////////
+/////////////
+
+
+
+
 let eliminarHDEX1 = document.getElementById("borrar1")
 eliminarHDEX1.addEventListener("click" , () => {
     fragmentoshdex1.splice(0, fragmentoshdex1.length)
@@ -271,157 +529,7 @@ eliminarHDEX7.addEventListener("click" , () => {
     fragmentoshdex7.splice(0, fragmentoshdex7.length)
     estadistica()
 })
-///////////////////////
-let incorporar1 = document.getElementById("incorporar1")
-incorporar1.addEventListener("click", () => {
-    let campo = document.getElementById("w3review")
-    for(let linea of fragmentoshdex1){
-        if(linea.includes("DS_Store")){
 
-        }else{
-            campo.value += linea + "\n"
-        }
-    }
-    estadistica()
-})
-///////////////////////
-let incorporar2 = document.getElementById("incorporar2")
-incorporar2.addEventListener("click", () => {
-    let campo = document.getElementById("w3review")
-    for(let linea of fragmentoshdex2){
-        if(linea.includes("DS_Store")){
-
-        }else{
-            campo.value += linea + "\n"
-        }
-    }
-    estadistica()
-})
-///////////////////////
-let incorporar3 = document.getElementById("incorporar3")
-incorporar3.addEventListener("click", () => {
-    let campo = document.getElementById("w3review")
-    for(let linea of fragmentoshdex3){
-        if(linea.includes("DS_Store")){
-
-        }else{
-            campo.value += linea + "\n"
-        }
-    }
-    estadistica()
-})
-///////////////////////
-let incorporar4 = document.getElementById("incorporar4")
-incorporar4.addEventListener("click", () => {
-    let campo = document.getElementById("w3review")
-    for(let linea of fragmentoshdex4){
-        if(linea.includes("DS_Store")){
-
-        }else{
-            campo.value += linea + "\n"
-        }
-    }
-    estadistica()
-})
-///////////////////////
-let incorporar5 = document.getElementById("incorporar5")
-incorporar5.addEventListener("click", () => {
-    let campo = document.getElementById("w3review")
-    for(let linea of fragmentoshdex5){
-        if(linea.includes("DS_Store")){
-
-        }else{
-            campo.value += linea + "\n"
-        }
-    }
-    estadistica()
-})
-///////////////////////
-let incorporar6 = document.getElementById("incorporar6")
-incorporar6.addEventListener("click", () => {
-    let campo = document.getElementById("w3review")
-    for(let linea of fragmentoshdex6){
-        if(linea.includes("DS_Store")){
-
-        }else{
-            campo.value += linea + "\n"
-        }
-    }
-    estadistica()
-})
-///////////////////////
-let incorporar7 = document.getElementById("incorporar7")
-incorporar7.addEventListener("click", () => {
-    let campo = document.getElementById("w3review")
-    for(let linea of fragmentoshdex7){
-        if(linea.includes("DS_Store")){
-
-        }else{
-            campo.value += linea + "\n"
-        }
-    }
-    estadistica()
-})
-
-function recopilar1(){
-    let hdex1 = document.getElementById("carpeta1")
-    obtenerRutasCarpeta(hdex1)
-}
-
-function recopilar2(){
-    let hdex2 = document.getElementById("carpeta2")
-    obtenerRutasCarpeta(hdex2)
-}
-
-function recopilar3(){
-    let hdex3 = document.getElementById("carpeta3")
-    obtenerRutasCarpeta(hdex3)
-}
-
-function recopilar4(){
-    let hdex4 = document.getElementById("carpeta4")
-    obtenerRutasCarpeta(hdex4)
-}
-
-function recopilar5(){
-    let hdex5 = document.getElementById("carpeta5")
-    obtenerRutasCarpeta(hdex5)
-}
-
-function recopilar6(){
-    let hdex6 = document.getElementById("carpeta6")
-    obtenerRutasCarpeta(hdex6)
-}
-
-function recopilar7(){
-    let hdex7 = document.getElementById("carpeta7")
-    obtenerRutasCarpeta(hdex7)
-}
-
-function obtenerRutasCarpeta(a){
-    let carpeta = a
-
-    recopilaciondatos.splice(0, recopilaciondatos.length)
-    
-    for (const archivo of carpeta.files) {
-        
-        let patharchivos = archivo.webkitRelativePath
-        if(patharchivos.includes(".DS_Store")){
-
-        }else{
-            arraypath = patharchivos.split("/")
-            if(arraypath.length > 2){
-                pathutil = arraypath[0] + "/" + arraypath[1] + "/" + arraypath[2]
-                recopilaciondatos.push(pathutil)
-            }
-        }
-    }
-
-    let pizarron = document.getElementById("w3review")
-    for(let item of recopilaciondatos){
-        pizarron.value += item + "\n"
-    }
-}
 
 let ejecutar = document.getElementById("ejecutar")
 ejecutar.addEventListener("click" , () =>{
@@ -430,43 +538,11 @@ ejecutar.addEventListener("click" , () =>{
     procesador(arraymaterial)
 })
 
-let eliminard = document.getElementById("eliminard")
-eliminard.addEventListener("click", () => {
-    let textarea = document.getElementById("w3review")
-    let lineaxlinea = textarea.value.split("\n")
-    temporal.splice(0, temporal.length)
-    for(let linea of lineaxlinea){
-        temporal.push(linea)
-    }
-    temporal.sort()
-    eliminarduplicadoscaja()
-})
-
 let eliminardatosobtenidos = document.getElementById("vaciascaja")
 eliminardatosobtenidos.addEventListener("click" , () => {
     let caja = document.getElementById("w3review")
     caja.value = ''
 })
-
-function eliminarduplicadoscaja(){
-    for(index in temporal){
-        let indice = parseInt(index)
-        if(temporal[indice] === temporal[indice + 1]){
-            temporal.splice(indice + 1 , 1)
-            eliminarduplicadoscaja()
-        }
-    }
-    let div = document.getElementById("cargadatos2")
-    div.innerHTML = `<textarea id="w3review" rows="15" cols="46" class="w3review"></textarea>`
-    let caja = document.getElementById("w3review")
-    for(let lineas of temporal){
-        if(lineas.length > 3){
-            caja.value += lineas + "\n"
-        }
-    }
-    
-    estadistica()
-}
 
 function estadistica(){
     let leerdatos = document.getElementById("w3review")
@@ -531,7 +607,7 @@ function estadistica(){
     parcial6.value = contadorHDEX6.length
     let parcial7 = document.getElementById("totalhdex7")
     parcial7.value = contadorHDEX7.length
-    let irregularidades = contadorHDEX1.length + contadorHDEX2.length + contadorHDEX3.length + contadorHDEX4.length + contadorHDEX5.length + contadorHDEX6.length + contadorHDEX7.length - renglones.length - 1
+    let irregularidades = contadorHDEX1.length + contadorHDEX2.length + contadorHDEX3.length + contadorHDEX4.length + contadorHDEX5.length + contadorHDEX6.length + contadorHDEX7.length + 1 - renglones.length
     let irregularidadesdom = document.getElementById("irregularidades")
     irregularidadesdom.value = irregularidades
 }   
@@ -797,14 +873,10 @@ function print(a){
     nombresD = document.getElementById("nombresD")
     nombresD.innerHTML = ``;
     nombresD.innerHTML = fragmentoResult
+
+    let datosentregados = document.getElementById("datosentregados")
+    datosentregados.value = a.length
 }
-
-
-
-
-
-
-
 
 function ordenar(a){
     b = a.sort()
