@@ -733,6 +733,10 @@ function procesador(a){
             idioma = "Audio Idioma Original"
             type = 1
         }
+        if(lxl[index].includes("UOK - ")){
+            idioma = "Incluye Cast N"
+            type = 1
+        }
         if(lxl[index].includes("Documentales/Documental - ")){
             type = 3
             definition = "Hay que ver"
@@ -764,6 +768,11 @@ function procesador(a){
             idioma = "-"
         }
         if(lxl[index].includes("Eventos/EVENTO - ")){
+            type = 8
+            definition = "HD"
+            idioma = ""
+        }
+        if(lxl[index].includes("Eventos/EVENTO M - ")){
             type = 8
             definition = "HD"
             idioma = "Multiples Relatos"
