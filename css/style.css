@@ -1,199 +1,199 @@
 @font-face {
-  font-family: "myriad";
-  src: url('../assets/fonts/myriadpro-bold.otf');
-}
-
-@font-face {
-  font-family: "avenirheavy";
-  src: url('../assets/fonts/Avenir Heavy.ttf');
-}
-
-@font-face {
-  font-family: "calc1";
-  src: url('../assets/fonts/calc/enhanced_led_board-7.ttf');
-}
-
-@font-face {
-  font-family: "calc2";
-  src: url('../assets/fonts/calc/led_board-7.ttf');
-}
-
-@font-face {
-  font-family: "electronic";
-  src: url('../assets/fonts/elec.ttf');
-}
-
-@font-face {
-  font-family: "electronic2";
-  src: url('../assets/fonts/DisplaySt.ttf');
-}
-
-@font-face {
-  font-family: "dots";
-  src: url('../assets/fonts/calc/fanfareticker.ttf');
-}
-
-@font-face {
-  font-family: "eledis2";
-  src: url('../assets/fonts/calc/Arcade.ttf');
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.542); 
-  border-radius: 5px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgb(145, 145, 145); 
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(191, 191, 191); 
-}
-
-*{
-  box-sizing: border-box;
-}
-
-body{
-  font-family: 'myriad';
-  overflow-x: hidden;
-  min-height: 500px;
-  height: auto;
-  margin: 0;
-  background-color: rgb(88, 88, 88);
-}
-
-.titulo{
-  position: relative;
-  background-color: rgb(0, 0, 0);
-  color: rgb(218, 218, 218);
-  width: 100%;
-  min-width: 900px;
-  margin: 0;
-  top: 0px;
-  height: 45px;
-  text-align: center;
-  padding-top: 5px;
-}
-
-.cargadatos{
-  margin-top: 10px;
-  position: relative;
-  background-color: rgb(113, 113, 113);
-  width: 67%;
-  height: 275px;
-  margin-left: 10px;
-  border-radius: 5px;
-}
-
-.cargadatos2{
-  position: absolute;
-  top: 55px;
-  right: 10px;
-  height: 270px;
-  background-color: rgb(113, 113, 113);
-  width: 30%;
-  border-radius: 5px;
-}
-
-.comandos2{
-  position: relative;
-  background-color: rgb(134, 134, 134);
-  margin-top: 5px;
-  padding: 5px;
-}
-
-.w3review{
-  padding: 3px;
-}
-
-.nombresD{
-  position: absolute;
-  left: 50px;
-  width: 900px;
-}
-
-.typesD{
-  position: absolute;
-  left: 580px;
-}
-
-.definitionD{
-  position: absolute;
-  left: 670px;
-}
-
-.idiomaD{
-  position: absolute;
-  left: 757px;
-  width: 200px;
-
-}
-
-.discoD{
-  position: absolute;
-  left: 1000px;
-}
-
-.entradas{
-  position: absolute;
-  left: 120px ;
-}
-
-.cota1{
-  position: relative;
-  left: 0px;
-}
-
-.borrar{
-  position: absolute;
-  left: 405px;
-}
-
-.incorporar{
-  position: absolute;
-  left: 550px;
-}
-
-.info{
-  position: absolute;
-  left: 510px;
-
-}
-
-.totaldatos{
-  position: relative;
-  margin: 3px;
-  width: 50px;
-}
-
-.tituloparcial{
-  position: absolute;
-  left: 600px;
-}
-
-.cifrasparciales{
-  position: absolute;
-  left: 730px;
-  width: 80px;
-}
-
-.tituloirregular{
-
-  left: 1077px;
-}
-
-.datosirregularidades{
-  margin: 3px;
-  width: 80px;
-}
+    font-family: "myriad";
+    src: url('../assets/fonts/myriadpro-bold.otf');
+  }
+  
+  @font-face {
+    font-family: "avenirheavy";
+    src: url('../assets/fonts/Avenir Heavy.ttf');
+  }
+  
+  @font-face {
+    font-family: "calc1";
+    src: url('../assets/fonts/calc/enhanced_led_board-7.ttf');
+  }
+  
+  @font-face {
+    font-family: "calc2";
+    src: url('../assets/fonts/calc/led_board-7.ttf');
+  }
+  
+  @font-face {
+    font-family: "electronic";
+    src: url('../assets/fonts/elec.ttf');
+  }
+  
+  @font-face {
+    font-family: "electronic2";
+    src: url('../assets/fonts/DisplaySt.ttf');
+  }
+  
+  @font-face {
+    font-family: "dots";
+    src: url('../assets/fonts/calc/fanfareticker.ttf');
+  }
+  
+  @font-face {
+    font-family: "eledis2";
+    src: url('../assets/fonts/calc/Arcade.ttf');
+  }
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.542); 
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(145, 145, 145); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(191, 191, 191); 
+  }
+  
+  *{
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'myriad';
+    overflow-x: hidden;
+    min-height: 500px;
+    height: auto;
+    margin: 0;
+    background-color: rgb(88, 88, 88);
+  }
+  
+  .titulo{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    color: rgb(218, 218, 218);
+    width: 100%;
+    min-width: 900px;
+    margin: 0;
+    top: 0px;
+    height: 45px;
+    text-align: center;
+    padding-top: 5px;
+  }
+  
+  .cargadatos{
+    margin-top: 10px;
+    position: relative;
+    background-color: rgb(113, 113, 113);
+    width: 67%;
+    height: 310px;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  
+  .cargadatos2{
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    height: 310px;
+    background-color: rgb(113, 113, 113);
+    width: 30%;
+    border-radius: 5px;
+  }
+  
+  .comandos2{
+    position: relative;
+    background-color: rgb(134, 134, 134);
+    margin-top: 5px;
+    padding: 5px;
+  }
+  
+  .w3review{
+    padding: 3px;
+  }
+  
+  .nombresD{
+    position: absolute;
+    left: 50px;
+    width: 900px;
+  }
+  
+  .typesD{
+    position: absolute;
+    left: 580px;
+  }
+  
+  .definitionD{
+    position: absolute;
+    left: 670px;
+  }
+  
+  .idiomaD{
+    position: absolute;
+    left: 757px;
+    width: 200px;
+  
+  }
+  
+  .discoD{
+    position: absolute;
+    left: 1000px;
+  }
+  
+  .entradas{
+    position: absolute;
+    left: 120px ;
+  }
+  
+  .cota1{
+    position: relative;
+    left: 0px;
+  }
+  
+  .borrar{
+    position: absolute;
+    left: 405px;
+  }
+  
+  .incorporar{
+    position: absolute;
+    left: 550px;
+  }
+  
+  .info{
+    position: absolute;
+    left: 510px;
+  
+  }
+  
+  .totaldatos{
+    position: relative;
+    margin: 3px;
+    width: 50px;
+  }
+  
+  .tituloparcial{
+    position: absolute;
+    left: 600px;
+  }
+  
+  .cifrasparciales{
+    position: absolute;
+    left: 730px;
+    width: 80px;
+  }
+  
+  .tituloirregular{
+  
+    left: 1077px;
+  }
+  
+  .datosirregularidades{
+    margin: 3px;
+    width: 80px;
+  }
