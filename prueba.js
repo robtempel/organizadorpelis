@@ -10,6 +10,7 @@ const fragmentoshdex4 = []
 const fragmentoshdex5 = []
 const fragmentoshdex6 = []
 const fragmentoshdex7 = []
+const fragmentoshdex8 = []
 const hdex1raiz = []
 const hdex2raiz = []
 const hdex3raiz = []
@@ -24,12 +25,13 @@ const contadorHDEX4 = []
 const contadorHDEX5 = []
 const contadorHDEX6 = []
 const contadorHDEX7 = []
+const contadorHDEX8 = []
 
 let datosentregadosdom = document.getElementById("datosentregados")
 datosentregadosdom.value = "0"
 
 let resetcaja = document.getElementById("cargadatos2")
-resetcaja.innerHTML = `<textarea id="w3review" rows="15" cols="46" class="w3review"></textarea>`
+resetcaja.innerHTML = `<textarea id="w3review" rows="20" cols="69" class="w3review"></textarea>`
 let divisioncargadatos = document.getElementById("cargadatos")
 divisioncargadatos.innerHTML = `<text class="cota1">HDEX1</text><input type="file" id="carpeta1" webkitdirectory directory multiple class="entradas"><br>
 <text class="cota1">HDEX1 internos</text><input type="file" id="carpeta1b" webkitdirectory directory multiple onchange="recopilar1b()" class="entradas">
@@ -58,7 +60,11 @@ divisioncargadatos.innerHTML = `<text class="cota1">HDEX1</text><input type="fil
 <text class="cota1">HDEX7</text><input type="file" id="carpeta7" webkitdirectory directory multiple class="entradas"><br>
 <text class="cota1">HDEX7 internos</text><input type="file" id="carpeta7b" webkitdirectory directory multiple onchange="recopilar7b()" class="entradas">
 <input type="button" id="borrar7" class="borrar" value="limpiar HDEX7"><text class="info" id="contador7"></text><input type="button" value=">>>" id="incorporar7" class="incorporar">
-<text class="tituloparcial">Entradas HDEX7</text><input type="text" id="totalhdex7" class="cifrasparciales" value=""><br>`
+<text class="tituloparcial">Entradas HDEX7</text><input type="text" id="totalhdex7" class="cifrasparciales" value=""><br>
+<text class="cota1">HDEX8</text><input type="file" id="carpeta8" webkitdirectory directory multiple class="entradas"><br>
+<text class="cota1">HDEX8 internos</text><input type="file" id="carpeta8b" webkitdirectory directory multiple onchange="recopilar8b()" class="entradas">
+<input type="button" id="borrar8" class="borrar" value="limpiar HDEX8"><text class="info" id="contador8"></text><input type="button" value=">>>" id="incorporar8" class="incorporar">
+<text class="tituloparcial">Entradas HDEX8</text><input type="text" id="totalhdex8" class="cifrasparciales" value=""><br>`
 
 estadistica()
 
@@ -486,6 +492,65 @@ function eliminarrepetidoshdex7(){
     estadistica()
 }
 
+
+/////////
+/////////
+//HDEX8
+/////////
+/////////
+let incorporar8 = document.getElementById("incorporar8")
+incorporar8.addEventListener("click", () => {
+
+    let hdex8 = document.getElementById("carpeta8").files
+    for(let linea of hdex8){
+        if(linea.webkitRelativePath.includes("DS_Store")){
+
+        }else{
+            let lineaseparada = linea.webkitRelativePath.split("/")
+            fragmentoshdex8.push(lineaseparada[0] + "/" + lineaseparada[1] + "/" + lineaseparada[2])
+        }
+    }
+
+    fragmentoshdex8.sort()
+    eliminarrepetidoshdex8()
+
+    let campo = document.getElementById("w3review")
+    for(let linea of fragmentoshdex8){
+        if(linea.includes("DS_Store")){
+
+        }else{
+            campo.value += linea + "\n"
+        }
+    }
+    estadistica()
+})
+
+function recopilar8b(){
+    let hdex8b = document.getElementById("carpeta8b")
+    let arrayfiles8 = hdex8b.files
+    for(let index of arrayfiles8){
+        let path = index.webkitRelativePath
+        let filearray = path.split("/")
+        if(filearray.length > 1){
+            let pathrestaurado = "Entretenimiento HDEX8/" + filearray[0] + "/" + filearray[1]
+            fragmentoshdex8.push(pathrestaurado)
+        }
+    }
+    fragmentoshdex8.sort()
+    eliminarrepetidoshdex8()
+}
+
+function eliminarrepetidoshdex8(){
+    for(index in fragmentoshdex8){
+        let indice = parseInt(index)
+        if(fragmentoshdex8[indice] === fragmentoshdex8[indice + 1]){
+            fragmentoshdex8.splice(indice + 1 , 1)
+            eliminarrepetidoshdex8()
+        }
+    }
+    estadistica()
+}
+
 /////////////
 /////////////
 /////////////
@@ -529,6 +594,11 @@ eliminarHDEX7.addEventListener("click" , () => {
     fragmentoshdex7.splice(0, fragmentoshdex7.length)
     estadistica()
 })
+let eliminarHDEX8 = document.getElementById("borrar8")
+eliminarHDEX8.addEventListener("click" , () => {
+    fragmentoshdex8.splice(0, fragmentoshdex8.length)
+    estadistica()
+})
 
 
 let ejecutar = document.getElementById("ejecutar")
@@ -554,6 +624,7 @@ function estadistica(){
     contadorHDEX5.splice(0, contadorHDEX5.length)
     contadorHDEX6.splice(0, contadorHDEX6.length)
     contadorHDEX7.splice(0, contadorHDEX7.length)
+    contadorHDEX8.splice(0, contadorHDEX8.length)
     for(let lineas of renglones){
         if(lineas.includes("HDEX1")){
             contadorHDEX1.push(lineas)
@@ -576,6 +647,9 @@ function estadistica(){
         if(lineas.includes("HDEX7")){
             contadorHDEX7.push(lineas)
         }
+        if(lineas.includes("HDEX8")){
+            contadorHDEX8.push(lineas)
+        }
     }
     let contador1 = document.getElementById("contador1")
     contador1.textContent = fragmentoshdex1.length
@@ -591,6 +665,8 @@ function estadistica(){
     contador6.textContent = fragmentoshdex6.length
     let contador7 = document.getElementById("contador7")
     contador7.textContent = fragmentoshdex7.length
+    let contador8 = document.getElementById("contador8")
+    contador8.textContent = fragmentoshdex8.length
     let totaldatosingresados = document.getElementById("totaldatos")
     totaldatosingresados.value = renglones.length - 1
     let parcial1 = document.getElementById("totalhdex1")
@@ -607,7 +683,9 @@ function estadistica(){
     parcial6.value = contadorHDEX6.length
     let parcial7 = document.getElementById("totalhdex7")
     parcial7.value = contadorHDEX7.length
-    let irregularidades = contadorHDEX1.length + contadorHDEX2.length + contadorHDEX3.length + contadorHDEX4.length + contadorHDEX5.length + contadorHDEX6.length + contadorHDEX7.length + 1 - renglones.length
+    let parcial8 = document.getElementById("totalhdex8")
+    parcial8.value = contadorHDEX8.length
+    let irregularidades = contadorHDEX1.length + contadorHDEX2.length + contadorHDEX3.length + contadorHDEX4.length + contadorHDEX5.length + contadorHDEX6.length + contadorHDEX7.length + contadorHDEX8.length + 1 - renglones.length
     let irregularidadesdom = document.getElementById("irregularidades")
     irregularidadesdom.value = irregularidades
 }   
@@ -817,6 +895,9 @@ function procesador(a){
         }
         if(lxl[index].includes("HDEX7")){
             disco = "HDEX7"
+        }
+        if(lxl[index].includes("HDEX8")){
+            disco = "HDEX8"
         }
         if(type == 1){
             instanciaType = "Pelicula"
