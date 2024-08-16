@@ -4,34 +4,167 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>MovOrg</title>
+    <link rel="stylesheet" href="style.css">
+    <title>MDExtrack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1 class="titulo">Organizador de Coleccion de Peliculas y Series</h1>
-    <div id="cargadatos" class="cargadatos">
-      
+    
+    <input type="file" id="carpeta1" webkitdirectory directory multiple class="entradas">
+    <label for="carpeta1" class="file-label">
+      <svg class="open_dir" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="-11.4 15.9 34.9 27.4" style="enable-background:new -11.4 15.9 34.9 27.4;" xml:space="preserve">
+   <path id="XMLID_3_" class="st0" d="M-8.8,36.1l3.3-14.2c0.1-0.3,0.3-0.5,0.6-0.5h26.6c0.4,0,0.7,0.4,0.6,0.7L19,36.6
+     c-0.1,0.4-0.5,0.7-0.9,0.7H-9.4c-0.5,0-0.9-0.4-0.9-0.9V17.5c0-0.3,0.3-0.6,0.6-0.6h7.1c0.2,0,0.5,0.1,0.7,0.2l3.4,1.8
+     C1.6,19,1.8,19,1.9,19h16.3c0.3,0,0.6,0.3,0.6,0.6v1.8"/>
+   <g class="st3">
+     <path class="st4" d="M9.1,20.4c-2.9-3-7.7-3.2-10.7-0.4c-3.1,2.8-3.3,7.6-0.4,10.7c2.8,3.1,7.6,3.3,10.7,0.4
+       C11.8,28.3,12,23.5,9.1,20.4z M5.9,21.6c-1.1-0.2-2.3,0-3.4,0.5c-1.7,0.8-2.8,2.4-3.2,4.3c-0.2,1-0.1,1.7,0,2.3
+       c0.1,0.4-0.5,0.7-0.7,0.3c-0.3-0.5-0.5-1.1-0.7-1.7c-0.6-2.5,0.5-5.1,2.6-6.4c1.9-1.2,4.1-1.2,5.7-0.2C6.7,21,6.4,21.7,5.9,21.6z"
+       />
+     <path class="st9" d="M6.2,20.7c-1.6-1-3.8-1-5.7,0.2c-2.1,1.3-3.2,3.9-2.6,6.4c0.2,0.6,0.4,1.2,0.7,1.7c0.2,0.4,0.8,0.1,0.7-0.3
+       c-0.1-0.6-0.2-1.3,0-2.3c0.4-1.9,1.5-3.5,3.2-4.3c1.1-0.5,2.3-0.7,3.4-0.5C6.4,21.7,6.7,21,6.2,20.7z"/>
+   </g>
+   <g>
+     <circle class="st6" cx="3.5" cy="25.6" r="7.6"/>
+     <path class="st7" d="M18.7,40.8l-8.8-9.5c-0.3-0.3-0.7-0.3-1,0l-0.4,0.3c-0.3,0.3-0.3,0.7,0,1l8.8,9.5c0.3,0.3,0.7,0.3,1,0l0.4-0.3
+       C19,41.5,19,41.1,18.7,40.8z"/>
+   </g>
+      </svg>
+    </label>
+    <input type="button" id="andale1" class="boton1">
+    <label for="andale1" class="file-label">
+      <svg class="scan_dir" version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="-11.4 15.9 34.9 27.4" style="enable-background:new -11.4 15.9 34.9 27.4;" xml:space="preserve">
+   <style type="text/css">
+     .st0{fill:#E6B54A;stroke:#000000;stroke-linecap:round;stroke-miterlimit:10;}
+     .st1{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+     .st2{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+     .st3{opacity:0.64;}
+     .st4{fill:#B5C9E7;}
+     .st9{fill:#FFFFFF;enable-background:new;}
+     .st6{fill:none;stroke:#001D7E;stroke-miterlimit:10;}
+     .st7{stroke:#001D7E;stroke-miterlimit:10;}
+   </style>
+   
+   <line class="st1" x1="-6.1" y1="17.6" x2="7.4" y2="17.6"/>
+   <line class="st1" x1="16" y1="17.6" x2="21" y2="17.6"/>
+   <line class="st1" x1="9.8" y1="17.6" x2="13.7" y2="17.6"/>
+   <line class="st1" x1="16" y1="20.6" x2="21" y2="20.6"/>
+   <line class="st1" x1="-6.1" y1="20.6" x2="7.4" y2="20.6"/>
+   <line class="st1" x1="9.8" y1="20.6" x2="13.7" y2="20.6"/>
+   <line class="st1" x1="16" y1="23.6" x2="21" y2="23.6"/>
+   <line class="st1" x1="-6.1" y1="23.6" x2="7.4" y2="23.6"/>
+   <line class="st1" x1="9.8" y1="23.6" x2="13.7" y2="23.6"/>
+   <line class="st1" x1="16.1" y1="26.6" x2="21.1" y2="26.6"/>
+   <line class="st1" x1="-5.9" y1="26.6" x2="7.6" y2="26.6"/>
+   <line class="st1" x1="9.9" y1="26.6" x2="13.8" y2="26.6"/>
+   <line class="st1" x1="16.1" y1="29.6" x2="21.1" y2="29.6"/>
+   <line class="st1" x1="-5.9" y1="29.6" x2="7.6" y2="29.6"/>
+   <line class="st1" x1="9.9" y1="29.6" x2="13.8" y2="29.6"/>
+   <line class="st1" x1="16.1" y1="32.6" x2="21.1" y2="32.6"/>
+   <line class="st1" x1="-5.9" y1="32.6" x2="7.6" y2="32.6"/>
+   <line class="st1" x1="9.9" y1="32.6" x2="13.8" y2="32.6"/>
+   <line class="st1" x1="16.1" y1="35.6" x2="21.1" y2="35.6"/>
+   <line class="st1" x1="-5.9" y1="35.6" x2="7.6" y2="35.6"/>
+   <line class="st1" x1="9.9" y1="35.6" x2="13.8" y2="35.6"/>
+   <line class="st1" x1="16.1" y1="38.6" x2="21.1" y2="38.6"/>
+   <line class="st1" x1="-5.9" y1="38.6" x2="7.6" y2="38.6"/>
+   <line class="st1" x1="9.9" y1="38.6" x2="13.8" y2="38.6"/>
+   <line class="st1" x1="16.1" y1="41.6" x2="21.1" y2="41.6"/>
+   <line class="st1" x1="-5.9" y1="41.6" x2="7.6" y2="41.6"/>
+   <line class="st1" x1="9.9" y1="41.6" x2="13.8" y2="41.6"/>
+   <line class="st2" x1="-8.7" y1="17.6" x2="-7.6" y2="17.6"/>
+   <line class="st2" x1="-8.7" y1="20.6" x2="-7.6" y2="20.6"/>
+   <line class="st2" x1="-8.7" y1="23.6" x2="-7.6" y2="23.6"/>
+   <line class="st2" x1="-8.6" y1="26.6" x2="-7.4" y2="26.6"/>
+   <line class="st2" x1="-8.6" y1="29.6" x2="-7.4" y2="29.6"/>
+   <line class="st2" x1="-8.6" y1="32.6" x2="-7.4" y2="32.6"/>
+   <line class="st2" x1="-8.6" y1="35.6" x2="-7.4" y2="35.6"/>
+   <line class="st2" x1="-8.6" y1="38.6" x2="-7.4" y2="38.6"/>
+   <line class="st2" x1="-8.6" y1="41.6" x2="-7.4" y2="41.6"/>
+   <g class="st3">
+     <path class="st4" d="M9.1,20.4c-2.9-3-7.7-3.2-10.7-0.4c-3.1,2.8-3.3,7.6-0.4,10.7c2.8,3.1,7.6,3.3,10.7,0.4
+       C11.8,28.3,12,23.5,9.1,20.4z M5.9,21.6c-1.1-0.2-2.3,0-3.4,0.5c-1.7,0.8-2.8,2.4-3.2,4.3c-0.2,1-0.1,1.7,0,2.3
+       c0.1,0.4-0.5,0.7-0.7,0.3c-0.3-0.5-0.5-1.1-0.7-1.7c-0.6-2.5,0.5-5.1,2.6-6.4c1.9-1.2,4.1-1.2,5.7-0.2C6.7,21,6.4,21.7,5.9,21.6z"
+       />
+     <path class="st9" d="M6.2,20.7c-1.6-1-3.8-1-5.7,0.2c-2.1,1.3-3.2,3.9-2.6,6.4c0.2,0.6,0.4,1.2,0.7,1.7c0.2,0.4,0.8,0.1,0.7-0.3
+       c-0.1-0.6-0.2-1.3,0-2.3c0.4-1.9,1.5-3.5,3.2-4.3c1.1-0.5,2.3-0.7,3.4-0.5C6.4,21.7,6.7,21,6.2,20.7z"/>
+   </g>
+   <g>
+     <circle class="st6" cx="3.5" cy="25.6" r="7.6"/>
+     <path class="st7" d="M18.7,40.8l-8.8-9.5c-0.3-0.3-0.7-0.3-1,0l-0.4,0.3c-0.3,0.3-0.3,0.7,0,1l8.8,9.5c0.3,0.3,0.7,0.3,1,0l0.4-0.3
+       C19,41.5,19,41.1,18.7,40.8z"/>
+   </g>
+       </svg>
+    </label>
+    <input type="button" id="imprimir" class="boton2">
+    <label for="imprimir" class="file-label">
+      <svg class="print_scan" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="-11.4 15.9 34.9 27.4" style="enable-background:new -11.4 15.9 34.9 27.4;" xml:space="preserve">
+   <g>
+     <g>
+       <g>
+         <path d="M17.8,28.7h-1.3v-8.3c0-0.2-0.2-0.4-0.4-0.4h-2.2v-2.6c0-0.2-0.2-0.4-0.4-0.4H0.4c-0.2,0-0.4,0.2-0.4,0.4V20h-2.2
+           c-0.2,0-0.4,0.2-0.4,0.4v8.3h-1.6c-1.5,0-2.8,1.3-2.8,2.8v9.4c0,0.2,0.2,0.4,0.4,0.4h5.2v0.9c0,0.2,0.2,0.4,0.4,0.4h15.6
+           c0.2,0,0.4-0.2,0.4-0.4v-0.9h5.3c0.2,0,0.4-0.2,0.4-0.4v-9.2C20.9,30,19.5,28.7,17.8,28.7z M13.9,20.8h1.7v7.8h-1.7V20.8z
+            M0.8,17.8H13v10.9H0.8V17.8z M-1.8,20.8H0v7.8h-1.7V20.8z M14.2,41.8L14.2,41.8H-0.5V40h14.7V41.8z M13,39.1H0.8v-1.3H13V39.1z
+            M20,31.7h-1.3c-0.2,0-0.4,0.2-0.4,0.4c0,0.2,0.2,0.4,0.4,0.4H20v7.8h-4.9v-0.9c0-0.2-0.2-0.4-0.4-0.4h-0.8v-1.7
+           c0-0.2-0.2-0.4-0.4-0.4H0.4C0.1,37,0,37.2,0,37.4v1.7h-0.9c-0.2,0-0.4,0.2-0.4,0.4v0.9h-4.8v-7.8H8.2c0.2,0,0.4-0.2,0.4-0.4
+           c0-0.2-0.2-0.4-0.4-0.4H-6.1v0c0-1.2,1-2.2,2.2-2.2h21.8C19,29.6,20,30.5,20,31.7L20,31.7L20,31.7z"/>
+         <path d="M14.3,33.5h2.6c0.2,0,0.4-0.2,0.4-0.4v-1.7c0-0.2-0.2-0.4-0.4-0.4h-2.6c-0.2,0-0.4,0.2-0.4,0.4V33
+           C13.9,33.3,14.1,33.5,14.3,33.5z M14.8,31.7h1.7v0.9h-1.7V31.7z"/>
+         <path d="M10,33.5h2.6c0.2,0,0.4-0.2,0.4-0.4v-1.7c0-0.2-0.2-0.4-0.4-0.4H10c-0.2,0-0.4,0.2-0.4,0.4V33C9.5,33.3,9.7,33.5,10,33.5
+           z M10.4,31.7h1.7v0.9h-1.7V31.7z"/>
+         <path d="M-1.8,33.9h-2.6c-0.2,0-0.4,0.2-0.4,0.4c0,0.2,0.2,0.4,0.4,0.4h2.6c0.2,0,0.4-0.2,0.4-0.4C-1.4,34.1-1.5,33.9-1.8,33.9z"
+           />
+         <path d="M0.4,33.9H0c-0.2,0-0.4,0.2-0.4,0.4c0,0.2,0.2,0.4,0.4,0.4h0.4c0.2,0,0.4-0.2,0.4-0.4C0.8,34.1,0.6,33.9,0.4,33.9z"/>
+       </g>
+     </g>
+   </g>
+      </svg>
+    </label>
+    <input type="button" id="copy" class="boton3">
+    <label for="scanpend" class="file-label">
+      <svg class="copy_scan" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="-11.4 15.9 34.9 27.4" style="enable-background:new -11.4 15.9 34.9 27.4;" xml:space="preserve">
+   <style type="text/css">
+     .st5{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+     .st1{fill:none;stroke:#000000;stroke-linecap:round;stroke-miterlimit:10;}
+   </style>
+   <path class="st5" d="M10.7,37.6H-2.5c-1,0-1.8-0.8-1.8-1.8V19.6c0-1,0.8-1.8,1.8-1.8h13.2c1,0,1.8,0.8,1.8,1.8v16.3
+     C12.4,36.8,11.6,37.6,10.7,37.6z"/>
+   <path class="st5" d="M14.7,41.6H1.5c-1,0-1.8-0.8-1.8-1.8V23.6c0-1,0.8-1.8,1.8-1.8h13.2c1,0,1.8,0.8,1.8,1.8v16.3
+     C16.4,40.8,15.6,41.6,14.7,41.6z"/>
+   <line class="st1" x1="2.6" y1="24.7" x2="13.5" y2="24.7"/>
+   <line class="st1" x1="2.6" y1="28.7" x2="13.5" y2="28.7"/>
+   <line class="st1" x1="2.6" y1="32.7" x2="13.5" y2="32.7"/>
+   <line class="st1" x1="2.6" y1="36.7" x2="13.5" y2="36.7"/>
+       </svg>
+    </label>
+
+    <text class="informe1" id="informe1"></text>
+    <text class="informe2" id="informe2"></text>
+    
+    <div class="bac">
+      <div class="bam" id="bam">
+        <text id="control" class="control"></text>
+      </div>
+      <text class="textoavance" id="textoavance"></text>
     </div>
-    <div id="cargadatos2" class="cargadatos2">
-      <textarea id="w3review" rows="15" cols="75" class="w3review"></textarea>
+    
+    <div id="current" class="current">
     </div>
 
-    <div class="comandos2">
-      <input type="button" id="ejecutar" value="Ejecutar">
-      <input type="button" id="copiar" value="Copiar">
-      <input type="button" id="vaciascaja" value="Borrar datos obtenidos">
-      <text class="titulototal">Datos ingresados</text><input type="text" id="totaldatos" class="totaldatos" value="">
-      <text class="titulototal">Datos entregados</text><input type="text" id="datosentregados" class="totaldatos" value="">
-      <text class="tituloirregular">Irregularidades</text><input type="text" id="irregularidades" class="datosirregularidades" value="">
-
+    <div id="show" class="show">
     </div>
 
-    <div id="resultado" class="contenedorResultado">
-      <text id="nombresD" class="nombresD"></text>
 
-
-
-    </div>
 
     <script src="prueba.js"></script>
   </body>
