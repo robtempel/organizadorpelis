@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="css/style.css">
+    <link rel="stylesheet"  href="css/styles.css">
     <title>MDExtrack</title>
     <script src="https://cdn.rawgit.com/dashersh/m4s-js/master/mp4box.all.min.js"></script>  
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,306 +42,331 @@
 
 
 
-
-
-
+    
+    
+    
     <div class="inputdata">
       <div class="bloque" id="bloque1">
         <label for="carpeta1" class="file-label">
           <svg class="open_dir" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="-11.4 15.9 34.9 27.4" style="enable-background:new -11.4 15.9 34.9 27.4;" xml:space="preserve">
-      <path id="XMLID_3_" class="st0" d="M-8.8,36.1l3.3-14.2c0.1-0.3,0.3-0.5,0.6-0.5h26.6c0.4,0,0.7,0.4,0.6,0.7L19,36.6
-        c-0.1,0.4-0.5,0.7-0.9,0.7H-9.4c-0.5,0-0.9-0.4-0.9-0.9V17.5c0-0.3,0.3-0.6,0.6-0.6h7.1c0.2,0,0.5,0.1,0.7,0.2l3.4,1.8
-        C1.6,19,1.8,19,1.9,19h16.3c0.3,0,0.6,0.3,0.6,0.6v1.8"/>
-      <g class="st3">
-        <path class="st4" d="M9.1,20.4c-2.9-3-7.7-3.2-10.7-0.4c-3.1,2.8-3.3,7.6-0.4,10.7c2.8,3.1,7.6,3.3,10.7,0.4
-          C11.8,28.3,12,23.5,9.1,20.4z M5.9,21.6c-1.1-0.2-2.3,0-3.4,0.5c-1.7,0.8-2.8,2.4-3.2,4.3c-0.2,1-0.1,1.7,0,2.3
-          c0.1,0.4-0.5,0.7-0.7,0.3c-0.3-0.5-0.5-1.1-0.7-1.7c-0.6-2.5,0.5-5.1,2.6-6.4c1.9-1.2,4.1-1.2,5.7-0.2C6.7,21,6.4,21.7,5.9,21.6z"
-          />
-        <path class="st9" d="M6.2,20.7c-1.6-1-3.8-1-5.7,0.2c-2.1,1.3-3.2,3.9-2.6,6.4c0.2,0.6,0.4,1.2,0.7,1.7c0.2,0.4,0.8,0.1,0.7-0.3
-          c-0.1-0.6-0.2-1.3,0-2.3c0.4-1.9,1.5-3.5,3.2-4.3c1.1-0.5,2.3-0.7,3.4-0.5C6.4,21.7,6.7,21,6.2,20.7z"/>
-      </g>
+          <path id="XMLID_3_" class="st0" d="M-8.8,36.1l3.3-14.2c0.1-0.3,0.3-0.5,0.6-0.5h26.6c0.4,0,0.7,0.4,0.6,0.7L19,36.6
+          c-0.1,0.4-0.5,0.7-0.9,0.7H-9.4c-0.5,0-0.9-0.4-0.9-0.9V17.5c0-0.3,0.3-0.6,0.6-0.6h7.1c0.2,0,0.5,0.1,0.7,0.2l3.4,1.8
+          C1.6,19,1.8,19,1.9,19h16.3c0.3,0,0.6,0.3,0.6,0.6v1.8"/>
+          <g class="st3">
+            <path class="st4" d="M9.1,20.4c-2.9-3-7.7-3.2-10.7-0.4c-3.1,2.8-3.3,7.6-0.4,10.7c2.8,3.1,7.6,3.3,10.7,0.4
+            C11.8,28.3,12,23.5,9.1,20.4z M5.9,21.6c-1.1-0.2-2.3,0-3.4,0.5c-1.7,0.8-2.8,2.4-3.2,4.3c-0.2,1-0.1,1.7,0,2.3
+            c0.1,0.4-0.5,0.7-0.7,0.3c-0.3-0.5-0.5-1.1-0.7-1.7c-0.6-2.5,0.5-5.1,2.6-6.4c1.9-1.2,4.1-1.2,5.7-0.2C6.7,21,6.4,21.7,5.9,21.6z"
+            />
+            <path class="st9" d="M6.2,20.7c-1.6-1-3.8-1-5.7,0.2c-2.1,1.3-3.2,3.9-2.6,6.4c0.2,0.6,0.4,1.2,0.7,1.7c0.2,0.4,0.8,0.1,0.7-0.3
+            c-0.1-0.6-0.2-1.3,0-2.3c0.4-1.9,1.5-3.5,3.2-4.3c1.1-0.5,2.3-0.7,3.4-0.5C6.4,21.7,6.7,21,6.2,20.7z"/>
+          </g>
       <g>
         <circle class="st6" cx="3.5" cy="25.6" r="7.6"/>
         <path class="st7" d="M18.7,40.8l-8.8-9.5c-0.3-0.3-0.7-0.3-1,0l-0.4,0.3c-0.3,0.3-0.3,0.7,0,1l8.8,9.5c0.3,0.3,0.7,0.3,1,0l0.4-0.3
-          C19,41.5,19,41.1,18.7,40.8z"/>
+        C19,41.5,19,41.1,18.7,40.8z"/>
       </g>
-          </svg>
-        </label>
-        <text class="informe0">1</text>
-        <div class="bac">
-          <div class="bam" id="bam1">
+    </svg>
+  </label>
+  <text class="informe0">1</text>
+  <text class="informe" id="informe1">0</text>
+  <div class="bac">
+    <div class="bam" id="bam1">
+    </div>
+    <text class="textoavance" id="textoavance1"></text>
+    <text class="actual" id="actual1"></text>
+    <div id="velo1" class="velo1">
+    <div id="medidor1" class="medidor1"></div>
+    </div>
+  </div>
+</div>
+
+<div class="bloque" id="bloque2">
+  <label for="carpeta2" class="file-label">
+    <svg class="open_dir" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    viewBox="-11.4 15.9 34.9 27.4" style="enable-background:new -11.4 15.9 34.9 27.4;" xml:space="preserve">
+    <path id="XMLID_3_" class="st0" d="M-8.8,36.1l3.3-14.2c0.1-0.3,0.3-0.5,0.6-0.5h26.6c0.4,0,0.7,0.4,0.6,0.7L19,36.6
+    c-0.1,0.4-0.5,0.7-0.9,0.7H-9.4c-0.5,0-0.9-0.4-0.9-0.9V17.5c0-0.3,0.3-0.6,0.6-0.6h7.1c0.2,0,0.5,0.1,0.7,0.2l3.4,1.8
+    C1.6,19,1.8,19,1.9,19h16.3c0.3,0,0.6,0.3,0.6,0.6v1.8"/>
+    <g class="st3">
+      <path class="st4" d="M9.1,20.4c-2.9-3-7.7-3.2-10.7-0.4c-3.1,2.8-3.3,7.6-0.4,10.7c2.8,3.1,7.6,3.3,10.7,0.4
+      C11.8,28.3,12,23.5,9.1,20.4z M5.9,21.6c-1.1-0.2-2.3,0-3.4,0.5c-1.7,0.8-2.8,2.4-3.2,4.3c-0.2,1-0.1,1.7,0,2.3
+      c0.1,0.4-0.5,0.7-0.7,0.3c-0.3-0.5-0.5-1.1-0.7-1.7c-0.6-2.5,0.5-5.1,2.6-6.4c1.9-1.2,4.1-1.2,5.7-0.2C6.7,21,6.4,21.7,5.9,21.6z"
+      />
+      <path class="st9" d="M6.2,20.7c-1.6-1-3.8-1-5.7,0.2c-2.1,1.3-3.2,3.9-2.6,6.4c0.2,0.6,0.4,1.2,0.7,1.7c0.2,0.4,0.8,0.1,0.7-0.3
+      c-0.1-0.6-0.2-1.3,0-2.3c0.4-1.9,1.5-3.5,3.2-4.3c1.1-0.5,2.3-0.7,3.4-0.5C6.4,21.7,6.7,21,6.2,20.7z"/>
+    </g>
+    <g>
+      <circle class="st6" cx="3.5" cy="25.6" r="7.6"/>
+      <path class="st7" d="M18.7,40.8l-8.8-9.5c-0.3-0.3-0.7-0.3-1,0l-0.4,0.3c-0.3,0.3-0.3,0.7,0,1l8.8,9.5c0.3,0.3,0.7,0.3,1,0l0.4-0.3
+      C19,41.5,19,41.1,18.7,40.8z"/>
+    </g>
+  </svg>
+</label>
+<text class="informe0">2</text>
+<text  class="informe" id="informe2">0</text>
+<div class="bac">
+  <div class="bam" id="bam2">
+  </div>
+  <text class="textoavance" id="textoavance2"></text>
+  <text class="actual" id="actual2"></text>
+        <div id="velo2" class="velo1">
+        <div id="medidor2" class="medidor2"></div>
+      </div>
+</div>
+</div>
+
+<div class="bloque" id="bloque3">
+  <label for="carpeta3" class="file-label">
+    <svg class="open_dir" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    viewBox="-11.4 15.9 34.9 27.4" style="enable-background:new -11.4 15.9 34.9 27.4;" xml:space="preserve">
+    <path id="XMLID_3_" class="st0" d="M-8.8,36.1l3.3-14.2c0.1-0.3,0.3-0.5,0.6-0.5h26.6c0.4,0,0.7,0.4,0.6,0.7L19,36.6
+    c-0.1,0.4-0.5,0.7-0.9,0.7H-9.4c-0.5,0-0.9-0.4-0.9-0.9V17.5c0-0.3,0.3-0.6,0.6-0.6h7.1c0.2,0,0.5,0.1,0.7,0.2l3.4,1.8
+    C1.6,19,1.8,19,1.9,19h16.3c0.3,0,0.6,0.3,0.6,0.6v1.8"/>
+    <g class="st3">
+          <path class="st4" d="M9.1,20.4c-2.9-3-7.7-3.2-10.7-0.4c-3.1,2.8-3.3,7.6-0.4,10.7c2.8,3.1,7.6,3.3,10.7,0.4
+          C11.8,28.3,12,23.5,9.1,20.4z M5.9,21.6c-1.1-0.2-2.3,0-3.4,0.5c-1.7,0.8-2.8,2.4-3.2,4.3c-0.2,1-0.1,1.7,0,2.3
+          c0.1,0.4-0.5,0.7-0.7,0.3c-0.3-0.5-0.5-1.1-0.7-1.7c-0.6-2.5,0.5-5.1,2.6-6.4c1.9-1.2,4.1-1.2,5.7-0.2C6.7,21,6.4,21.7,5.9,21.6z"
+          />
+          <path class="st9" d="M6.2,20.7c-1.6-1-3.8-1-5.7,0.2c-2.1,1.3-3.2,3.9-2.6,6.4c0.2,0.6,0.4,1.2,0.7,1.7c0.2,0.4,0.8,0.1,0.7-0.3
+          c-0.1-0.6-0.2-1.3,0-2.3c0.4-1.9,1.5-3.5,3.2-4.3c1.1-0.5,2.3-0.7,3.4-0.5C6.4,21.7,6.7,21,6.2,20.7z"/>
+        </g>
+        <g>
+          <circle class="st6" cx="3.5" cy="25.6" r="7.6"/>
+          <path class="st7" d="M18.7,40.8l-8.8-9.5c-0.3-0.3-0.7-0.3-1,0l-0.4,0.3c-0.3,0.3-0.3,0.7,0,1l8.8,9.5c0.3,0.3,0.7,0.3,1,0l0.4-0.3
+          C19,41.5,19,41.1,18.7,40.8z"/>
+        </g>
+            </svg>
+          </label>
+          <text  class="informe0">3</text>
+          <text class="informe" id="informe3">0</text>
+          <div class="bac">
+            <div class="bam" id="bam3">
+            </div>
+            <text class="textoavance" id="textoavance3"></text>
+            <text class="actual" id="actual3"></text>
+                  <div id="velo3" class="velo1">
+        <div id="medidor3" class="medidor3"></div>
+      </div>
           </div>
-          <text class="textoavance" id="textoavance1"></text>
-        </div>
-        <text class="informe" id="informe1">0</text>
       </div>
-
-      <div class="bloque" id="bloque2">
-        <label for="carpeta2" class="file-label">
-          <svg class="open_dir" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          viewBox="-11.4 15.9 34.9 27.4" style="enable-background:new -11.4 15.9 34.9 27.4;" xml:space="preserve">
-      <path id="XMLID_3_" class="st0" d="M-8.8,36.1l3.3-14.2c0.1-0.3,0.3-0.5,0.6-0.5h26.6c0.4,0,0.7,0.4,0.6,0.7L19,36.6
-        c-0.1,0.4-0.5,0.7-0.9,0.7H-9.4c-0.5,0-0.9-0.4-0.9-0.9V17.5c0-0.3,0.3-0.6,0.6-0.6h7.1c0.2,0,0.5,0.1,0.7,0.2l3.4,1.8
-        C1.6,19,1.8,19,1.9,19h16.3c0.3,0,0.6,0.3,0.6,0.6v1.8"/>
-      <g class="st3">
-        <path class="st4" d="M9.1,20.4c-2.9-3-7.7-3.2-10.7-0.4c-3.1,2.8-3.3,7.6-0.4,10.7c2.8,3.1,7.6,3.3,10.7,0.4
-          C11.8,28.3,12,23.5,9.1,20.4z M5.9,21.6c-1.1-0.2-2.3,0-3.4,0.5c-1.7,0.8-2.8,2.4-3.2,4.3c-0.2,1-0.1,1.7,0,2.3
-          c0.1,0.4-0.5,0.7-0.7,0.3c-0.3-0.5-0.5-1.1-0.7-1.7c-0.6-2.5,0.5-5.1,2.6-6.4c1.9-1.2,4.1-1.2,5.7-0.2C6.7,21,6.4,21.7,5.9,21.6z"
-          />
-        <path class="st9" d="M6.2,20.7c-1.6-1-3.8-1-5.7,0.2c-2.1,1.3-3.2,3.9-2.6,6.4c0.2,0.6,0.4,1.2,0.7,1.7c0.2,0.4,0.8,0.1,0.7-0.3
-          c-0.1-0.6-0.2-1.3,0-2.3c0.4-1.9,1.5-3.5,3.2-4.3c1.1-0.5,2.3-0.7,3.4-0.5C6.4,21.7,6.7,21,6.2,20.7z"/>
-      </g>
-      <g>
-        <circle class="st6" cx="3.5" cy="25.6" r="7.6"/>
-        <path class="st7" d="M18.7,40.8l-8.8-9.5c-0.3-0.3-0.7-0.3-1,0l-0.4,0.3c-0.3,0.3-0.3,0.7,0,1l8.8,9.5c0.3,0.3,0.7,0.3,1,0l0.4-0.3
-          C19,41.5,19,41.1,18.7,40.8z"/>
-      </g>
-          </svg>
-        </label>
-        <text class="informe0">2</text>
-      <div class="bac">
-        <div class="bam" id="bam2">
-        </div>
-        <text class="textoavance" id="textoavance2"></text>
-      </div>
-      <text  class="informe" id="informe2">0</text>
-    </div>
-
-    <div class="bloque" id="bloque3">
-        <label for="carpeta3" class="file-label">
-          <svg class="open_dir" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          viewBox="-11.4 15.9 34.9 27.4" style="enable-background:new -11.4 15.9 34.9 27.4;" xml:space="preserve">
-      <path id="XMLID_3_" class="st0" d="M-8.8,36.1l3.3-14.2c0.1-0.3,0.3-0.5,0.6-0.5h26.6c0.4,0,0.7,0.4,0.6,0.7L19,36.6
-        c-0.1,0.4-0.5,0.7-0.9,0.7H-9.4c-0.5,0-0.9-0.4-0.9-0.9V17.5c0-0.3,0.3-0.6,0.6-0.6h7.1c0.2,0,0.5,0.1,0.7,0.2l3.4,1.8
-        C1.6,19,1.8,19,1.9,19h16.3c0.3,0,0.6,0.3,0.6,0.6v1.8"/>
-      <g class="st3">
-        <path class="st4" d="M9.1,20.4c-2.9-3-7.7-3.2-10.7-0.4c-3.1,2.8-3.3,7.6-0.4,10.7c2.8,3.1,7.6,3.3,10.7,0.4
-          C11.8,28.3,12,23.5,9.1,20.4z M5.9,21.6c-1.1-0.2-2.3,0-3.4,0.5c-1.7,0.8-2.8,2.4-3.2,4.3c-0.2,1-0.1,1.7,0,2.3
-          c0.1,0.4-0.5,0.7-0.7,0.3c-0.3-0.5-0.5-1.1-0.7-1.7c-0.6-2.5,0.5-5.1,2.6-6.4c1.9-1.2,4.1-1.2,5.7-0.2C6.7,21,6.4,21.7,5.9,21.6z"
-          />
-        <path class="st9" d="M6.2,20.7c-1.6-1-3.8-1-5.7,0.2c-2.1,1.3-3.2,3.9-2.6,6.4c0.2,0.6,0.4,1.2,0.7,1.7c0.2,0.4,0.8,0.1,0.7-0.3
-          c-0.1-0.6-0.2-1.3,0-2.3c0.4-1.9,1.5-3.5,3.2-4.3c1.1-0.5,2.3-0.7,3.4-0.5C6.4,21.7,6.7,21,6.2,20.7z"/>
-      </g>
-      <g>
-        <circle class="st6" cx="3.5" cy="25.6" r="7.6"/>
-        <path class="st7" d="M18.7,40.8l-8.8-9.5c-0.3-0.3-0.7-0.3-1,0l-0.4,0.3c-0.3,0.3-0.3,0.7,0,1l8.8,9.5c0.3,0.3,0.7,0.3,1,0l0.4-0.3
-          C19,41.5,19,41.1,18.7,40.8z"/>
-      </g>
-          </svg>
-        </label>
-        <text  class="informe0">3</text>
-      <div class="bac">
-        <div class="bam" id="bam3">
-        </div>
-        <text class="textoavance" id="textoavance3"></text>
-      </div>
-      <text class="informe" id="informe3">0</text>
-    </div>
-
-    <div class="bloque" id="bloque4">
+      
+      <div class="bloque" id="bloque4">
         <label for="carpeta4" class="file-label">
           <svg class="open_dir" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="-11.4 15.9 34.9 27.4" style="enable-background:new -11.4 15.9 34.9 27.4;" xml:space="preserve">
-      <path id="XMLID_3_" class="st0" d="M-8.8,36.1l3.3-14.2c0.1-0.3,0.3-0.5,0.6-0.5h26.6c0.4,0,0.7,0.4,0.6,0.7L19,36.6
-        c-0.1,0.4-0.5,0.7-0.9,0.7H-9.4c-0.5,0-0.9-0.4-0.9-0.9V17.5c0-0.3,0.3-0.6,0.6-0.6h7.1c0.2,0,0.5,0.1,0.7,0.2l3.4,1.8
-        C1.6,19,1.8,19,1.9,19h16.3c0.3,0,0.6,0.3,0.6,0.6v1.8"/>
-      <g class="st3">
-        <path class="st4" d="M9.1,20.4c-2.9-3-7.7-3.2-10.7-0.4c-3.1,2.8-3.3,7.6-0.4,10.7c2.8,3.1,7.6,3.3,10.7,0.4
+          <path id="XMLID_3_" class="st0" d="M-8.8,36.1l3.3-14.2c0.1-0.3,0.3-0.5,0.6-0.5h26.6c0.4,0,0.7,0.4,0.6,0.7L19,36.6
+          c-0.1,0.4-0.5,0.7-0.9,0.7H-9.4c-0.5,0-0.9-0.4-0.9-0.9V17.5c0-0.3,0.3-0.6,0.6-0.6h7.1c0.2,0,0.5,0.1,0.7,0.2l3.4,1.8
+          C1.6,19,1.8,19,1.9,19h16.3c0.3,0,0.6,0.3,0.6,0.6v1.8"/>
+          <g class="st3">
+          <path class="st4" d="M9.1,20.4c-2.9-3-7.7-3.2-10.7-0.4c-3.1,2.8-3.3,7.6-0.4,10.7c2.8,3.1,7.6,3.3,10.7,0.4
           C11.8,28.3,12,23.5,9.1,20.4z M5.9,21.6c-1.1-0.2-2.3,0-3.4,0.5c-1.7,0.8-2.8,2.4-3.2,4.3c-0.2,1-0.1,1.7,0,2.3
           c0.1,0.4-0.5,0.7-0.7,0.3c-0.3-0.5-0.5-1.1-0.7-1.7c-0.6-2.5,0.5-5.1,2.6-6.4c1.9-1.2,4.1-1.2,5.7-0.2C6.7,21,6.4,21.7,5.9,21.6z"
           />
-        <path class="st9" d="M6.2,20.7c-1.6-1-3.8-1-5.7,0.2c-2.1,1.3-3.2,3.9-2.6,6.4c0.2,0.6,0.4,1.2,0.7,1.7c0.2,0.4,0.8,0.1,0.7-0.3
+          <path class="st9" d="M6.2,20.7c-1.6-1-3.8-1-5.7,0.2c-2.1,1.3-3.2,3.9-2.6,6.4c0.2,0.6,0.4,1.2,0.7,1.7c0.2,0.4,0.8,0.1,0.7-0.3
           c-0.1-0.6-0.2-1.3,0-2.3c0.4-1.9,1.5-3.5,3.2-4.3c1.1-0.5,2.3-0.7,3.4-0.5C6.4,21.7,6.7,21,6.2,20.7z"/>
-      </g>
-      <g>
-        <circle class="st6" cx="3.5" cy="25.6" r="7.6"/>
-        <path class="st7" d="M18.7,40.8l-8.8-9.5c-0.3-0.3-0.7-0.3-1,0l-0.4,0.3c-0.3,0.3-0.3,0.7,0,1l8.8,9.5c0.3,0.3,0.7,0.3,1,0l0.4-0.3
+        </g>
+        <g>
+          <circle class="st6" cx="3.5" cy="25.6" r="7.6"/>
+          <path class="st7" d="M18.7,40.8l-8.8-9.5c-0.3-0.3-0.7-0.3-1,0l-0.4,0.3c-0.3,0.3-0.3,0.7,0,1l8.8,9.5c0.3,0.3,0.7,0.3,1,0l0.4-0.3
           C19,41.5,19,41.1,18.7,40.8z"/>
-      </g>
-          </svg>
-        </label>
-        <text  class="informe0">4</text>
-      <div class="bac">
-        <div class="bam" id="bam4">
-        </div>
-        <text class="textoavance" id="textoavance4"></text>
+        </g>
+      </svg>
+    </label>
+    <text  class="informe0">4</text>
+    <text class="informe" id="informe4">0</text>
+    <div class="bac">
+      <div class="bam" id="bam4">
       </div>
-      <text class="informe" id="informe4">0</text>
-    </div>
+          <text class="textoavance" id="textoavance4"></text>
+          <text class="actual" id="actual4"></text>
+                <div id="velo4" class="velo1">
+        <div id="medidor4" class="medidor4"></div>
+      </div>
+        </div>
+      </div>
 
-    <div class="bloque" id="bloque5">
-        <label for="carpeta5" class="file-label">
-          <svg class="open_dir" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          viewBox="-11.4 15.9 34.9 27.4" style="enable-background:new -11.4 15.9 34.9 27.4;" xml:space="preserve">
-      <path id="XMLID_3_" class="st0" d="M-8.8,36.1l3.3-14.2c0.1-0.3,0.3-0.5,0.6-0.5h26.6c0.4,0,0.7,0.4,0.6,0.7L19,36.6
-        c-0.1,0.4-0.5,0.7-0.9,0.7H-9.4c-0.5,0-0.9-0.4-0.9-0.9V17.5c0-0.3,0.3-0.6,0.6-0.6h7.1c0.2,0,0.5,0.1,0.7,0.2l3.4,1.8
-        C1.6,19,1.8,19,1.9,19h16.3c0.3,0,0.6,0.3,0.6,0.6v1.8"/>
-      <g class="st3">
-        <path class="st4" d="M9.1,20.4c-2.9-3-7.7-3.2-10.7-0.4c-3.1,2.8-3.3,7.6-0.4,10.7c2.8,3.1,7.6,3.3,10.7,0.4
-          C11.8,28.3,12,23.5,9.1,20.4z M5.9,21.6c-1.1-0.2-2.3,0-3.4,0.5c-1.7,0.8-2.8,2.4-3.2,4.3c-0.2,1-0.1,1.7,0,2.3
-          c0.1,0.4-0.5,0.7-0.7,0.3c-0.3-0.5-0.5-1.1-0.7-1.7c-0.6-2.5,0.5-5.1,2.6-6.4c1.9-1.2,4.1-1.2,5.7-0.2C6.7,21,6.4,21.7,5.9,21.6z"
-          />
-        <path class="st9" d="M6.2,20.7c-1.6-1-3.8-1-5.7,0.2c-2.1,1.3-3.2,3.9-2.6,6.4c0.2,0.6,0.4,1.2,0.7,1.7c0.2,0.4,0.8,0.1,0.7-0.3
-          c-0.1-0.6-0.2-1.3,0-2.3c0.4-1.9,1.5-3.5,3.2-4.3c1.1-0.5,2.3-0.7,3.4-0.5C6.4,21.7,6.7,21,6.2,20.7z"/>
-      </g>
-      <g>
-        <circle class="st6" cx="3.5" cy="25.6" r="7.6"/>
-        <path class="st7" d="M18.7,40.8l-8.8-9.5c-0.3-0.3-0.7-0.3-1,0l-0.4,0.3c-0.3,0.3-0.3,0.7,0,1l8.8,9.5c0.3,0.3,0.7,0.3,1,0l0.4-0.3
+      <div class="bloque" id="bloque5">
+          <label for="carpeta5" class="file-label">
+            <svg class="open_dir" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="-11.4 15.9 34.9 27.4" style="enable-background:new -11.4 15.9 34.9 27.4;" xml:space="preserve">
+        <path id="XMLID_3_" class="st0" d="M-8.8,36.1l3.3-14.2c0.1-0.3,0.3-0.5,0.6-0.5h26.6c0.4,0,0.7,0.4,0.6,0.7L19,36.6
+          c-0.1,0.4-0.5,0.7-0.9,0.7H-9.4c-0.5,0-0.9-0.4-0.9-0.9V17.5c0-0.3,0.3-0.6,0.6-0.6h7.1c0.2,0,0.5,0.1,0.7,0.2l3.4,1.8
+          C1.6,19,1.8,19,1.9,19h16.3c0.3,0,0.6,0.3,0.6,0.6v1.8"/>
+        <g class="st3">
+          <path class="st4" d="M9.1,20.4c-2.9-3-7.7-3.2-10.7-0.4c-3.1,2.8-3.3,7.6-0.4,10.7c2.8,3.1,7.6,3.3,10.7,0.4
+            C11.8,28.3,12,23.5,9.1,20.4z M5.9,21.6c-1.1-0.2-2.3,0-3.4,0.5c-1.7,0.8-2.8,2.4-3.2,4.3c-0.2,1-0.1,1.7,0,2.3
+            c0.1,0.4-0.5,0.7-0.7,0.3c-0.3-0.5-0.5-1.1-0.7-1.7c-0.6-2.5,0.5-5.1,2.6-6.4c1.9-1.2,4.1-1.2,5.7-0.2C6.7,21,6.4,21.7,5.9,21.6z"
+            />
+          <path class="st9" d="M6.2,20.7c-1.6-1-3.8-1-5.7,0.2c-2.1,1.3-3.2,3.9-2.6,6.4c0.2,0.6,0.4,1.2,0.7,1.7c0.2,0.4,0.8,0.1,0.7-0.3
+            c-0.1-0.6-0.2-1.3,0-2.3c0.4-1.9,1.5-3.5,3.2-4.3c1.1-0.5,2.3-0.7,3.4-0.5C6.4,21.7,6.7,21,6.2,20.7z"/>
+        </g>
+        <g>
+          <circle class="st6" cx="3.5" cy="25.6" r="7.6"/>
+          <path class="st7" d="M18.7,40.8l-8.8-9.5c-0.3-0.3-0.7-0.3-1,0l-0.4,0.3c-0.3,0.3-0.3,0.7,0,1l8.8,9.5c0.3,0.3,0.7,0.3,1,0l0.4-0.3
+            C19,41.5,19,41.1,18.7,40.8z"/>
+        </g>
+            </svg>
+          </label>
+          <text class="informe0">5</text>
+          <text class="informe" id="informe5">0</text>
+        <div class="bac">
+          <div class="bam" id="bam5">
+          </div>
+          <text class="textoavance" id="textoavance5"></text>
+          <text class="actual" id="actual5"></text>
+            <div id="velo5" class="velo1">
+            <div id="medidor5" class="medidor5"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bloque" id="bloque6">
+          <label for="carpeta6" class="file-label">
+            <svg class="open_dir" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="-11.4 15.9 34.9 27.4" style="enable-background:new -11.4 15.9 34.9 27.4;" xml:space="preserve">
+        <path id="XMLID_3_" class="st0" d="M-8.8,36.1l3.3-14.2c0.1-0.3,0.3-0.5,0.6-0.5h26.6c0.4,0,0.7,0.4,0.6,0.7L19,36.6
+          c-0.1,0.4-0.5,0.7-0.9,0.7H-9.4c-0.5,0-0.9-0.4-0.9-0.9V17.5c0-0.3,0.3-0.6,0.6-0.6h7.1c0.2,0,0.5,0.1,0.7,0.2l3.4,1.8
+          C1.6,19,1.8,19,1.9,19h16.3c0.3,0,0.6,0.3,0.6,0.6v1.8"/>
+        <g class="st3">
+          <path class="st4" d="M9.1,20.4c-2.9-3-7.7-3.2-10.7-0.4c-3.1,2.8-3.3,7.6-0.4,10.7c2.8,3.1,7.6,3.3,10.7,0.4
+            C11.8,28.3,12,23.5,9.1,20.4z M5.9,21.6c-1.1-0.2-2.3,0-3.4,0.5c-1.7,0.8-2.8,2.4-3.2,4.3c-0.2,1-0.1,1.7,0,2.3
+            c0.1,0.4-0.5,0.7-0.7,0.3c-0.3-0.5-0.5-1.1-0.7-1.7c-0.6-2.5,0.5-5.1,2.6-6.4c1.9-1.2,4.1-1.2,5.7-0.2C6.7,21,6.4,21.7,5.9,21.6z"
+            />
+          <path class="st9" d="M6.2,20.7c-1.6-1-3.8-1-5.7,0.2c-2.1,1.3-3.2,3.9-2.6,6.4c0.2,0.6,0.4,1.2,0.7,1.7c0.2,0.4,0.8,0.1,0.7-0.3
+            c-0.1-0.6-0.2-1.3,0-2.3c0.4-1.9,1.5-3.5,3.2-4.3c1.1-0.5,2.3-0.7,3.4-0.5C6.4,21.7,6.7,21,6.2,20.7z"/>
+        </g>
+        <g>
+          <circle class="st6" cx="3.5" cy="25.6" r="7.6"/>
+          <path class="st7" d="M18.7,40.8l-8.8-9.5c-0.3-0.3-0.7-0.3-1,0l-0.4,0.3c-0.3,0.3-0.3,0.7,0,1l8.8,9.5c0.3,0.3,0.7,0.3,1,0l0.4-0.3
           C19,41.5,19,41.1,18.7,40.8z"/>
-      </g>
-          </svg>
-        </label>
-        <text class="informe0">5</text>
-      <div class="bac">
-        <div class="bam" id="bam5">
-        </div>
-        <text class="textoavance" id="textoavance5"></text>
+        </g>
+      </svg>
+    </label>
+    <text class="informe0">6</text>
+    <text class="informe" id="informe6">0</text>
+    <div class="bac">
+      <div class="bam" id="bam6">
       </div>
-      <text class="informe" id="informe5">0</text>
-    </div>
-
-    <div class="bloque" id="bloque6">
-        <label for="carpeta6" class="file-label">
-          <svg class="open_dir" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          viewBox="-11.4 15.9 34.9 27.4" style="enable-background:new -11.4 15.9 34.9 27.4;" xml:space="preserve">
-      <path id="XMLID_3_" class="st0" d="M-8.8,36.1l3.3-14.2c0.1-0.3,0.3-0.5,0.6-0.5h26.6c0.4,0,0.7,0.4,0.6,0.7L19,36.6
-        c-0.1,0.4-0.5,0.7-0.9,0.7H-9.4c-0.5,0-0.9-0.4-0.9-0.9V17.5c0-0.3,0.3-0.6,0.6-0.6h7.1c0.2,0,0.5,0.1,0.7,0.2l3.4,1.8
-        C1.6,19,1.8,19,1.9,19h16.3c0.3,0,0.6,0.3,0.6,0.6v1.8"/>
-      <g class="st3">
-        <path class="st4" d="M9.1,20.4c-2.9-3-7.7-3.2-10.7-0.4c-3.1,2.8-3.3,7.6-0.4,10.7c2.8,3.1,7.6,3.3,10.7,0.4
-          C11.8,28.3,12,23.5,9.1,20.4z M5.9,21.6c-1.1-0.2-2.3,0-3.4,0.5c-1.7,0.8-2.8,2.4-3.2,4.3c-0.2,1-0.1,1.7,0,2.3
-          c0.1,0.4-0.5,0.7-0.7,0.3c-0.3-0.5-0.5-1.1-0.7-1.7c-0.6-2.5,0.5-5.1,2.6-6.4c1.9-1.2,4.1-1.2,5.7-0.2C6.7,21,6.4,21.7,5.9,21.6z"
-          />
-        <path class="st9" d="M6.2,20.7c-1.6-1-3.8-1-5.7,0.2c-2.1,1.3-3.2,3.9-2.6,6.4c0.2,0.6,0.4,1.2,0.7,1.7c0.2,0.4,0.8,0.1,0.7-0.3
-          c-0.1-0.6-0.2-1.3,0-2.3c0.4-1.9,1.5-3.5,3.2-4.3c1.1-0.5,2.3-0.7,3.4-0.5C6.4,21.7,6.7,21,6.2,20.7z"/>
-      </g>
-      <g>
-        <circle class="st6" cx="3.5" cy="25.6" r="7.6"/>
-        <path class="st7" d="M18.7,40.8l-8.8-9.5c-0.3-0.3-0.7-0.3-1,0l-0.4,0.3c-0.3,0.3-0.3,0.7,0,1l8.8,9.5c0.3,0.3,0.7,0.3,1,0l0.4-0.3
-          C19,41.5,19,41.1,18.7,40.8z"/>
-      </g>
-          </svg>
-        </label>
-        <text class="informe0">6</text>
-      <div class="bac">
-        <div class="bam" id="bam6">
-        </div>
-        <text class="textoavance" id="textoavance6"></text>
+          <text class="textoavance" id="textoavance6"></text>
+          <text class="actual" id="actual6"></text>
+                <div id="velo6" class="velo1">
+        <div id="medidor6" class="medidor6"></div>
       </div>
-      <text class="informe" id="informe6">0</text>
-    </div>
-
-    <div class="bloque" id="bloque7">
+        </div>
+      </div>
+      
+      <div class="bloque" id="bloque7">
         <label for="carpeta7" class="file-label">
           <svg class="open_dir" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="-11.4 15.9 34.9 27.4" style="enable-background:new -11.4 15.9 34.9 27.4;" xml:space="preserve">
-      <path id="XMLID_3_" class="st0" d="M-8.8,36.1l3.3-14.2c0.1-0.3,0.3-0.5,0.6-0.5h26.6c0.4,0,0.7,0.4,0.6,0.7L19,36.6
-        c-0.1,0.4-0.5,0.7-0.9,0.7H-9.4c-0.5,0-0.9-0.4-0.9-0.9V17.5c0-0.3,0.3-0.6,0.6-0.6h7.1c0.2,0,0.5,0.1,0.7,0.2l3.4,1.8
-        C1.6,19,1.8,19,1.9,19h16.3c0.3,0,0.6,0.3,0.6,0.6v1.8"/>
-      <g class="st3">
-        <path class="st4" d="M9.1,20.4c-2.9-3-7.7-3.2-10.7-0.4c-3.1,2.8-3.3,7.6-0.4,10.7c2.8,3.1,7.6,3.3,10.7,0.4
+          <path id="XMLID_3_" class="st0" d="M-8.8,36.1l3.3-14.2c0.1-0.3,0.3-0.5,0.6-0.5h26.6c0.4,0,0.7,0.4,0.6,0.7L19,36.6
+          c-0.1,0.4-0.5,0.7-0.9,0.7H-9.4c-0.5,0-0.9-0.4-0.9-0.9V17.5c0-0.3,0.3-0.6,0.6-0.6h7.1c0.2,0,0.5,0.1,0.7,0.2l3.4,1.8
+          C1.6,19,1.8,19,1.9,19h16.3c0.3,0,0.6,0.3,0.6,0.6v1.8"/>
+          <g class="st3">
+          <path class="st4" d="M9.1,20.4c-2.9-3-7.7-3.2-10.7-0.4c-3.1,2.8-3.3,7.6-0.4,10.7c2.8,3.1,7.6,3.3,10.7,0.4
           C11.8,28.3,12,23.5,9.1,20.4z M5.9,21.6c-1.1-0.2-2.3,0-3.4,0.5c-1.7,0.8-2.8,2.4-3.2,4.3c-0.2,1-0.1,1.7,0,2.3
           c0.1,0.4-0.5,0.7-0.7,0.3c-0.3-0.5-0.5-1.1-0.7-1.7c-0.6-2.5,0.5-5.1,2.6-6.4c1.9-1.2,4.1-1.2,5.7-0.2C6.7,21,6.4,21.7,5.9,21.6z"
           />
-        <path class="st9" d="M6.2,20.7c-1.6-1-3.8-1-5.7,0.2c-2.1,1.3-3.2,3.9-2.6,6.4c0.2,0.6,0.4,1.2,0.7,1.7c0.2,0.4,0.8,0.1,0.7-0.3
+          <path class="st9" d="M6.2,20.7c-1.6-1-3.8-1-5.7,0.2c-2.1,1.3-3.2,3.9-2.6,6.4c0.2,0.6,0.4,1.2,0.7,1.7c0.2,0.4,0.8,0.1,0.7-0.3
           c-0.1-0.6-0.2-1.3,0-2.3c0.4-1.9,1.5-3.5,3.2-4.3c1.1-0.5,2.3-0.7,3.4-0.5C6.4,21.7,6.7,21,6.2,20.7z"/>
-      </g>
-      <g>
-        <circle class="st6" cx="3.5" cy="25.6" r="7.6"/>
-        <path class="st7" d="M18.7,40.8l-8.8-9.5c-0.3-0.3-0.7-0.3-1,0l-0.4,0.3c-0.3,0.3-0.3,0.7,0,1l8.8,9.5c0.3,0.3,0.7,0.3,1,0l0.4-0.3
+        </g>
+        <g>
+          <circle class="st6" cx="3.5" cy="25.6" r="7.6"/>
+          <path class="st7" d="M18.7,40.8l-8.8-9.5c-0.3-0.3-0.7-0.3-1,0l-0.4,0.3c-0.3,0.3-0.3,0.7,0,1l8.8,9.5c0.3,0.3,0.7,0.3,1,0l0.4-0.3
           C19,41.5,19,41.1,18.7,40.8z"/>
-      </g>
-          </svg>
-        </label>
-        <text class="informe0">7</text>
-      <div class="bac">
-        <div class="bam" id="bam7">
-        </div>
-        <text class="textoavance" id="textoavance7"></text>
+        </g>
+      </svg>
+    </label>
+    <text class="informe0">7</text>
+    <text class="informe" id="informe7">0</text>
+    <div class="bac">
+      <div class="bam" id="bam7">
       </div>
-      <text class="informe" id="informe7">0</text>
-    </div>
+          <text class="textoavance" id="textoavance7"></text>
+          <text class="actual" id="actual7"></text>
+                <div id="velo7" class="velo1">
+        <div id="medidor7" class="medidor7"></div>
+      </div>
+        </div>
+      </div>
 
-    <div class="bloque" id="bloque8">
-        <label for="carpeta8" class="file-label">
-          <svg class="open_dir" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          viewBox="-11.4 15.9 34.9 27.4" style="enable-background:new -11.4 15.9 34.9 27.4;" xml:space="preserve">
-      <path id="XMLID_3_" class="st0" d="M-8.8,36.1l3.3-14.2c0.1-0.3,0.3-0.5,0.6-0.5h26.6c0.4,0,0.7,0.4,0.6,0.7L19,36.6
-        c-0.1,0.4-0.5,0.7-0.9,0.7H-9.4c-0.5,0-0.9-0.4-0.9-0.9V17.5c0-0.3,0.3-0.6,0.6-0.6h7.1c0.2,0,0.5,0.1,0.7,0.2l3.4,1.8
-        C1.6,19,1.8,19,1.9,19h16.3c0.3,0,0.6,0.3,0.6,0.6v1.8"/>
-      <g class="st3">
-        <path class="st4" d="M9.1,20.4c-2.9-3-7.7-3.2-10.7-0.4c-3.1,2.8-3.3,7.6-0.4,10.7c2.8,3.1,7.6,3.3,10.7,0.4
-          C11.8,28.3,12,23.5,9.1,20.4z M5.9,21.6c-1.1-0.2-2.3,0-3.4,0.5c-1.7,0.8-2.8,2.4-3.2,4.3c-0.2,1-0.1,1.7,0,2.3
-          c0.1,0.4-0.5,0.7-0.7,0.3c-0.3-0.5-0.5-1.1-0.7-1.7c-0.6-2.5,0.5-5.1,2.6-6.4c1.9-1.2,4.1-1.2,5.7-0.2C6.7,21,6.4,21.7,5.9,21.6z"
-          />
-        <path class="st9" d="M6.2,20.7c-1.6-1-3.8-1-5.7,0.2c-2.1,1.3-3.2,3.9-2.6,6.4c0.2,0.6,0.4,1.2,0.7,1.7c0.2,0.4,0.8,0.1,0.7-0.3
-          c-0.1-0.6-0.2-1.3,0-2.3c0.4-1.9,1.5-3.5,3.2-4.3c1.1-0.5,2.3-0.7,3.4-0.5C6.4,21.7,6.7,21,6.2,20.7z"/>
-      </g>
-      <g>
-        <circle class="st6" cx="3.5" cy="25.6" r="7.6"/>
-        <path class="st7" d="M18.7,40.8l-8.8-9.5c-0.3-0.3-0.7-0.3-1,0l-0.4,0.3c-0.3,0.3-0.3,0.7,0,1l8.8,9.5c0.3,0.3,0.7,0.3,1,0l0.4-0.3
+      <div class="bloque" id="bloque8">
+          <label for="carpeta8" class="file-label">
+            <svg class="open_dir" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="-11.4 15.9 34.9 27.4" style="enable-background:new -11.4 15.9 34.9 27.4;" xml:space="preserve">
+        <path id="XMLID_3_" class="st0" d="M-8.8,36.1l3.3-14.2c0.1-0.3,0.3-0.5,0.6-0.5h26.6c0.4,0,0.7,0.4,0.6,0.7L19,36.6
+          c-0.1,0.4-0.5,0.7-0.9,0.7H-9.4c-0.5,0-0.9-0.4-0.9-0.9V17.5c0-0.3,0.3-0.6,0.6-0.6h7.1c0.2,0,0.5,0.1,0.7,0.2l3.4,1.8
+          C1.6,19,1.8,19,1.9,19h16.3c0.3,0,0.6,0.3,0.6,0.6v1.8"/>
+        <g class="st3">
+          <path class="st4" d="M9.1,20.4c-2.9-3-7.7-3.2-10.7-0.4c-3.1,2.8-3.3,7.6-0.4,10.7c2.8,3.1,7.6,3.3,10.7,0.4
+            C11.8,28.3,12,23.5,9.1,20.4z M5.9,21.6c-1.1-0.2-2.3,0-3.4,0.5c-1.7,0.8-2.8,2.4-3.2,4.3c-0.2,1-0.1,1.7,0,2.3
+            c0.1,0.4-0.5,0.7-0.7,0.3c-0.3-0.5-0.5-1.1-0.7-1.7c-0.6-2.5,0.5-5.1,2.6-6.4c1.9-1.2,4.1-1.2,5.7-0.2C6.7,21,6.4,21.7,5.9,21.6z"
+            />
+          <path class="st9" d="M6.2,20.7c-1.6-1-3.8-1-5.7,0.2c-2.1,1.3-3.2,3.9-2.6,6.4c0.2,0.6,0.4,1.2,0.7,1.7c0.2,0.4,0.8,0.1,0.7-0.3
+            c-0.1-0.6-0.2-1.3,0-2.3c0.4-1.9,1.5-3.5,3.2-4.3c1.1-0.5,2.3-0.7,3.4-0.5C6.4,21.7,6.7,21,6.2,20.7z"/>
+        </g>
+        <g>
+          <circle class="st6" cx="3.5" cy="25.6" r="7.6"/>
+          <path class="st7" d="M18.7,40.8l-8.8-9.5c-0.3-0.3-0.7-0.3-1,0l-0.4,0.3c-0.3,0.3-0.3,0.7,0,1l8.8,9.5c0.3,0.3,0.7,0.3,1,0l0.4-0.3
           C19,41.5,19,41.1,18.7,40.8z"/>
-      </g>
-          </svg>
-        </label>
-        <text class="informe0">8</text>
-      <div class="bac">
-        <div class="bam" id="bam8">
-        </div>
-        <text class="textoavance" id="textoavance8"></text>
+        </g>
+      </svg>
+    </label>
+    <text class="informe0">8</text>
+    <text class="informe" id="informe8">0</text>
+    <div class="bac">
+      <div class="bam" id="bam8">
       </div>
-      <text class="informe" id="informe8">0</text>
-    </div>
+      <text class="textoavance" id="textoavance8"></text>
+      <text class="actual" id="actual8"></text>
+            <div id="velo8" class="velo1">
+        <div id="medidor8" class="medidor8"></div>
+      </div>
+        </div>
+      </div>
 
-    <div class="bloque" id="bloque9">
-        <label for="carpeta9" class="file-label">
-          <svg class="open_dir" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          viewBox="-11.4 15.9 34.9 27.4" style="enable-background:new -11.4 15.9 34.9 27.4;" xml:space="preserve">
-      <path id="XMLID_3_" class="st0" d="M-8.8,36.1l3.3-14.2c0.1-0.3,0.3-0.5,0.6-0.5h26.6c0.4,0,0.7,0.4,0.6,0.7L19,36.6
-        c-0.1,0.4-0.5,0.7-0.9,0.7H-9.4c-0.5,0-0.9-0.4-0.9-0.9V17.5c0-0.3,0.3-0.6,0.6-0.6h7.1c0.2,0,0.5,0.1,0.7,0.2l3.4,1.8
-        C1.6,19,1.8,19,1.9,19h16.3c0.3,0,0.6,0.3,0.6,0.6v1.8"/>
-      <g class="st3">
-        <path class="st4" d="M9.1,20.4c-2.9-3-7.7-3.2-10.7-0.4c-3.1,2.8-3.3,7.6-0.4,10.7c2.8,3.1,7.6,3.3,10.7,0.4
+      <div class="bloque" id="bloque9">
+          <label for="carpeta9" class="file-label">
+            <svg class="open_dir" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="-11.4 15.9 34.9 27.4" style="enable-background:new -11.4 15.9 34.9 27.4;" xml:space="preserve">
+        <path id="XMLID_3_" class="st0" d="M-8.8,36.1l3.3-14.2c0.1-0.3,0.3-0.5,0.6-0.5h26.6c0.4,0,0.7,0.4,0.6,0.7L19,36.6
+          c-0.1,0.4-0.5,0.7-0.9,0.7H-9.4c-0.5,0-0.9-0.4-0.9-0.9V17.5c0-0.3,0.3-0.6,0.6-0.6h7.1c0.2,0,0.5,0.1,0.7,0.2l3.4,1.8
+          C1.6,19,1.8,19,1.9,19h16.3c0.3,0,0.6,0.3,0.6,0.6v1.8"/>
+        <g class="st3">
+          <path class="st4" d="M9.1,20.4c-2.9-3-7.7-3.2-10.7-0.4c-3.1,2.8-3.3,7.6-0.4,10.7c2.8,3.1,7.6,3.3,10.7,0.4
           C11.8,28.3,12,23.5,9.1,20.4z M5.9,21.6c-1.1-0.2-2.3,0-3.4,0.5c-1.7,0.8-2.8,2.4-3.2,4.3c-0.2,1-0.1,1.7,0,2.3
           c0.1,0.4-0.5,0.7-0.7,0.3c-0.3-0.5-0.5-1.1-0.7-1.7c-0.6-2.5,0.5-5.1,2.6-6.4c1.9-1.2,4.1-1.2,5.7-0.2C6.7,21,6.4,21.7,5.9,21.6z"
           />
-        <path class="st9" d="M6.2,20.7c-1.6-1-3.8-1-5.7,0.2c-2.1,1.3-3.2,3.9-2.6,6.4c0.2,0.6,0.4,1.2,0.7,1.7c0.2,0.4,0.8,0.1,0.7-0.3
+          <path class="st9" d="M6.2,20.7c-1.6-1-3.8-1-5.7,0.2c-2.1,1.3-3.2,3.9-2.6,6.4c0.2,0.6,0.4,1.2,0.7,1.7c0.2,0.4,0.8,0.1,0.7-0.3
           c-0.1-0.6-0.2-1.3,0-2.3c0.4-1.9,1.5-3.5,3.2-4.3c1.1-0.5,2.3-0.7,3.4-0.5C6.4,21.7,6.7,21,6.2,20.7z"/>
-      </g>
-      <g>
-        <circle class="st6" cx="3.5" cy="25.6" r="7.6"/>
-        <path class="st7" d="M18.7,40.8l-8.8-9.5c-0.3-0.3-0.7-0.3-1,0l-0.4,0.3c-0.3,0.3-0.3,0.7,0,1l8.8,9.5c0.3,0.3,0.7,0.3,1,0l0.4-0.3
+        </g>
+        <g>
+          <circle class="st6" cx="3.5" cy="25.6" r="7.6"/>
+          <path class="st7" d="M18.7,40.8l-8.8-9.5c-0.3-0.3-0.7-0.3-1,0l-0.4,0.3c-0.3,0.3-0.3,0.7,0,1l8.8,9.5c0.3,0.3,0.7,0.3,1,0l0.4-0.3
           C19,41.5,19,41.1,18.7,40.8z"/>
-      </g>
-          </svg>
-        </label>
-        <text class="informe0">9</text>
-      <div class="bac">
-        <div class="bam" id="bam9">
-        </div>
-        <text class="textoavance" id="textoavance9"></text>
+        </g>
+      </svg>
+    </label>
+    <text class="informe0">9</text>
+    <text class="informe" id="informe9">0</text>
+    <div class="bac">
+          <div class="bam" id="bam9">
+          </div>
+          <text class="textoavance" id="textoavance9"></text>
+                <div id="velo9" class="velo1">
+        <div id="medidor9" class="medidor9"></div>
       </div>
-      <text class="informe" id="informe9">0</text>
+        </div>
+      </div>
     </div>
-  </div>
     
     <div id="current" class="current">
-      <div class="flujo" id="flujo">
-        
-      </div>
-
-      <div class="actuales">
-        <text class="actual" id="actual1">Disco 1</text><br>
-        <text class="actual" id="actual2">Disco 2</text><br>
-        <text class="actual" id="actual3">Disco 3</text><br>
-        <text class="actual" id="actual4">Disco 4</text><br>
-        <text class="actual" id="actual5">Disco 5</text><br>
-        <text class="actual" id="actual6">Disco 6</text><br>
-        <text class="actual" id="actual7">Disco 7</text><br>
-        <text class="actual" id="actual8">Disco 8</text>
+      <div class="flujo" id="flujo">        
       </div>
     </div>
+
+
 
     <div id="show" class="show">
     </div>
