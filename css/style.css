@@ -1,254 +1,376 @@
 .roboto-mono{
-    font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
-  
+
 /* width */
 ::-webkit-scrollbar {
-    width: 6px;
+  width: 6px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.542); 
-    border-radius: 5px;
+  box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.542); 
+  border-radius: 5px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(145, 145, 145); 
-    border-radius: 10px;
+  background: rgb(145, 145, 145); 
+  border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(191, 191, 191); 
+  background: rgb(191, 191, 191); 
 }
 
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body{
-    overflow-x: hidden;
-    min-height: 500px;
-    height: auto;
-    margin: 0;
-    background-color: rgb(88, 88, 88);
+  overflow-x: hidden;
+  min-height: 500px;
+  height: auto;
+  margin: 0;
+  background-color: rgb(88, 88, 88);
 }
 
 .boton1{
-    width: 200px;
+  width: 200px;
 }
 
 .show{
-    width: 1800px;
-    font-family: "Roboto mono";
-    height: 500px;
-    margin-bottom: 30px;
-    background-color: rgb(63, 63, 63);
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    border-radius: 8px;
-    border-width: 2px;
-    border-style: outset;
-    border-color: rgba(255, 255, 255, 0.445);
+  width: auto;
+  font-family: "Roboto mono";
+  font-size: 13px;
+  height: auto;
+  margin-bottom: 30px;
+  background-color: rgb(63, 63, 63);
+  margin: 5px;
+  padding: 10px;
+  border-radius: 8px;
+  border-color: rgba(255, 255, 255, 0.445);
 }
 
 .bloque{
-    width: 600px;
-    background-color: rgba(0, 0, 0, 0.425);
-    border-radius: 5px;
-    margin: 3px;
-}
-
-.bloqueV{
-    width: 600px;
-    background-color: rgba(18, 211, 0, 0.425);
-    border-radius: 5px;
-    margin: 3px;
+  width: auto;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.425);
+  border-radius: 5px;
+  margin: 3px;
 }
 
 .inputdata{
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.164);
-    width: 33%;
-    padding: 6px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.164);
+  width: auto;
+  padding: 6px;
+  margin: 5px;
+  border-radius: 10px;
 }
 
 .current{
-    display: inline-block;
-    width: 66%;
-    font-family: "Roboto mono";
-    height: 650px;
-    background-color: rgb(63, 63, 63);
-    padding: 10px;
-    border-radius: 8px;
-    border-width: 2px;
-    border-style: outset;
-    border-color: rgba(255, 255, 255, 0.445);
+  width: auto;
+  font-family: "Roboto mono";
+  font-size: 10px;
+  height: auto;
+  background-color: rgb(63, 63, 63);
+  padding: 10px;
+  border-radius: 8px;
+  margin: 5px;
+  border-color: rgba(255, 255, 255, 0.445);
+}
+
+.currentI{
+  display: none;
 }
 
 .bac{
-    position: relative;
-    display: inline-block;
-    margin: 5px;
-    width: 400px;
-    height: 40px;
-
-    background-color: rgb(255, 255, 255);
+  position: relative;
+  display: inline-block;
+  bottom: 12px;
+  width: 400px;
+  height: 25px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
 }
 
 .flujo{
-    position: relative;
-    width: auto;
-    height: 74%;
-    background-color: rgb(63, 63, 63);
-    color: aquamarine;
+  position: relative;
+  width: auto;
+  height: 74%;
+  background-color: rgb(63, 63, 63);
+  color: aquamarine;
+  
 }
 
 .actuales{
-    position: relative;
-    width: auto;
-    background-color: rgb(63, 63, 63);
-    color: rgb(230, 120, 120);
-    height: 26%;
+  position: relative;
+  width: auto;
+  background-color: rgb(63, 63, 63);
+  color: rgb(30, 255, 30);
+  height: 26%;
 }
 
 .actual{
-    font-size: 15px;
-    position: relative;
-    margin-left: 10px;
-
-    width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-
-
+  position: absolute;
+  left: 410px;
+  bottom: 3px;
+  width: 900px;
+  color: aqua;
+  font-family: sans-serif;
 }
 
 .textoavance{
-    font-family: "Roboto Mono", monospace;
-    font-weight: bold;
-    position: absolute;
-    top: 3px;
-    font-size: 25px;
-    right: 150px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  font-size: 20px;
+  right: 150px;
 }
 
 .bam{
-    position: relative;
-    left: 0px;
-    width: 0px;
-    height: 40px;
-
-    background-color: rgb(114, 123, 255);
-
+  position: relative;
+  left: 0px;
+  width: 0px;
+  height: 25px;
+  background-color: rgb(114, 123, 255);
+  border-radius: 6px;
 }
 
 .control{
-    position: absolute;
-    z-index: 1000;
+  position: absolute;
+  z-index: 1000;
 }
 
 .open_dir{
-    width: 50px;
-    background-color: rgb(126, 126, 126);
-    padding: 10px;
-    border-radius: 5px;
-    margin: 10px;
-    box-shadow: inset 1px 1px 1px 1px rgba(255, 255, 255, 0.705), inset -1px -1px 1px 1px rgba(0, 0, 0, 0.596);
+  position: relative;
+  width: 30px;
+  background-color: rgb(126, 126, 126);
+  padding: 3px;
+  border-radius: 5px;
+  bottom: 3px;
+  margin: 10px;
+  box-shadow: inset 1px 1px 1px 1px rgba(255, 255, 255, 0.705), inset -1px -1px 1px 1px rgba(0, 0, 0, 0.596);
 }
 
 .informe{
-    display: inline-block;
-    position: relative;
-    bottom: 18px;
-    border-radius: 5px;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: larger;
-    background-color: rgba(0, 0, 0, 0.568);
-    color: white;
-    width: 70px;
+  display: inline-block;
+  position: relative;
+  bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgba(0, 0, 0, 0.568);
+  color: white;
+  width: 70px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+}
+
+.informeA{
+  display: inline-block;
+  position: relative;
+  bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(212, 223, 63);
+  color: rgb(0, 0, 0);
+  width: 70px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+}
+
+.informeV{
+  display: inline-block;
+  position: relative;
+  bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgba(72, 221, 72, 0.568);
+  color: white;
+  width: 70px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+}
+
+.informeC{
+  background-color: rgb(114, 123, 255);
+  display: inline-block;
+  position: relative;
+  bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  width: 70px;
+  padding-top: 5px;
+  padding-bottom: 3px;
 }
 
 .informe0{
-    display: inline-block;
-    position: relative;
-    bottom: 18px;
-    border-radius: 5px;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: larger;
-    border-color: white;
-    border-width: 1px;
-    border-style: solid;
-    background-color: rgba(0, 0, 0, 0.568);
-    color: white;
-    width: 20px;
+  display: inline-block;
+  position: relative;
+  bottom: 18px;
+  right: 5px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  background-color: rgba(0, 0, 0, 0.568);
+  color: white;
+  width: 20px;
 }
 
 .entradas{
-    display: none;
+  display: none;
 }
 
 .boton1{
-    display: none;
+  display: none;
 }
 
 .boton2{
-    display: none;
+  display: none;
 }
 
 .boton3{
-    display: none;
+  display: none;
 }
 
 .file-label{
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .complete{
-    color: rgb(201, 201, 201);
-}
-
-.flujodim{
-    position: absolute;
-    right: 5px;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(201, 201, 201);
 }
 
 .flujonombre{
-    position: absolute;
-    left: 3px;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  bottom: 5px;
+  font-size: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.flujosize{
-    position: absolute;
-    right: 100px;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.flujonombreR{
+  position: relative;
+  bottom: 5px;
+  font-size: 10px;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(0, 255, 0);
 }
 
-.flujodur{
-    position: absolute;
-    right: 220px;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.velocimetros{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: auto;
+  background-color: rgb(63, 63, 63);
+  height: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-color: rgb(126, 126, 126);
+  border-width: 2px;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 10px;
 }
 
-.flujomod{
-    position: absolute;
-    right: 300px;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.velo1{
+  position: relative;
+  left: 1320px;
+  bottom: 21px;
+
+  width: 400px;
+  height: 15px;
+
+  background-color: rgb(255, 255, 255);
+
+  border-radius: 4px;
+  margin-top: 1px;
 }
+
+.medidor1{
+  width: 0;
+  background-color: rgb(42, 165, 48);
+  position: relative;
+  margin-left: 0;
+  height: 15px;
+  border-radius: 4px;
+}
+
+.medidor2{
+  width: 0px;
+  background-color: rgb(42, 165, 48);
+  position: relative;
+  height: 15px;
+  border-radius: 4px;
+}
+
+.medidor3{
+  width: 0;
+  background-color: rgb(42, 165, 48);
+  position: relative;
+  height: 15px;
+  border-radius: 4px;
+}
+
+.medidor4{
+  width: 0;
+  background-color: rgb(42, 165, 48);
+  position: relative;
+  height: 15px;
+  border-radius: 4px;
+}
+
+.medidor5{
+  width: 0;
+  background-color: rgb(42, 165, 48);
+  position: relative;
+  height: 15px;
+  border-radius: 4px;
+}
+
+.medidor6{
+  width: 0;
+  background-color: rgb(42, 165, 48);
+  position: relative;
+  height: 15px;
+  border-radius: 4px;
+}
+
+.medidor7{
+  width: 0;
+  background-color: rgb(42, 165, 48);
+  position: relative;
+  height: 15px;
+  border-radius: 4px;
+}
+
+.medidor8{
+  width: 0;
+  background-color: rgb(42, 165, 48);
+  position: relative;
+  height: 15px;
+  border-radius: 4px;
+}
+
+.medidor9{
+  width: 0;
+  background-color: rgb(42, 165, 48);
+  position: relative;
+  height: 15px;
+  border-radius: 4px;
+}
+
