@@ -210,7 +210,7 @@ function imprimirtodo(){
         let fragmentoResult = ''
 
         tuti.forEach(item => {
-            fragmentoResult += `<text class="complete">${item.route}/${item.tamano}/${item.tipo}/${item.ultimamodificacion.getUTCFullYear()}-${("0" + (item.ultimamodificacion.getMonth()+1)).slice(-2)}-${("0" + item.ultimamodificacion.getDate()).slice(-2)} ${("0" + item.ultimamodificacion.getHours()).slice(-2)}:${("0" + item.ultimamodificacion.getMinutes()).slice(-2)}:${("0" + item.ultimamodificacion.getSeconds()).slice(-2)},${("00" + item.ultimamodificacion.getMilliseconds()).slice(-3)}/${item.anchovideo}/${item.altovideo}/${item.duracion}</text><br>`
+            fragmentoResult += `<text class="complete">${item.route}/${item.tamano}/${item.tipo}/${item.ultimamodificacion.getUTCFullYear()}-${("0" + (item.ultimamodificacion.getMonth()+1)).slice(-2)}-${("0" + item.ultimamodificacion.getDate()).slice(-2)} ${("0" + item.ultimamodificacion.getHours()).slice(-2)}:${("0" + item.ultimamodificacion.getMinutes()).slice(-2)}:${("0" + item.ultimamodificacion.getSeconds()).slice(-2)}|${("00" + item.ultimamodificacion.getMilliseconds()).slice(-3)}/${item.anchovideo}/${item.altovideo}/${item.duracion}</text><br>`
         })
     
         let contenedorresultado = document.getElementById("show")
@@ -255,7 +255,7 @@ function imprimirparcial(){
     let fragmentoResult = ''
 
     tuti.forEach(item => {
-        fragmentoResult += `<text class="complete">${item.webkitRelativePath}/${item.size}/${item.type.toString().substring(0,5)}/${item.lastModifiedDate.getUTCFullYear()}-${("0" + (item.lastModifiedDate.getMonth()+1)).slice(-2)}-${("0" + item.lastModifiedDate.getDate()).slice(-2)} ${("0" + item.lastModifiedDate.getHours()).slice(-2)}:${("0" + item.lastModifiedDate.getMinutes()).slice(-2)}:${("0" + item.lastModifiedDate.getSeconds()).slice(-2)},${("00" + item.lastModifiedDate.getMilliseconds()).slice(-3)}</text><br>`
+        fragmentoResult += `<text class="complete">${item.webkitRelativePath}/${item.size}/${item.type.toString().substring(0,5)}/${item.lastModifiedDate.getUTCFullYear()}-${("0" + (item.lastModifiedDate.getMonth()+1)).slice(-2)}-${("0" + item.lastModifiedDate.getDate()).slice(-2)} ${("0" + item.lastModifiedDate.getHours()).slice(-2)}:${("0" + item.lastModifiedDate.getMinutes()).slice(-2)}:${("0" + item.lastModifiedDate.getSeconds()).slice(-2)}|${("00" + item.lastModifiedDate.getMilliseconds()).slice(-3)}</text><br>`
     })
 
     let contenedorresultado = document.getElementById("show")
