@@ -437,15 +437,15 @@ function velocidad1(){
         }
     })
 
-    document.getElementById("medidor1").style.width = `${contador1.length*22}px`
-    document.getElementById("medidor2").style.width = `${contador2.length*22}px`
-    document.getElementById("medidor3").style.width = `${contador3.length*22}px`
-    document.getElementById("medidor4").style.width = `${contador4.length*22}px`
-    document.getElementById("medidor5").style.width = `${contador5.length*22}px`
-    document.getElementById("medidor6").style.width = `${contador6.length*22}px`
-    document.getElementById("medidor7").style.width = `${contador7.length*22}px`
-    document.getElementById("medidor8").style.width = `${contador8.length*22}px`
-    document.getElementById("medidor9").style.width = `${contador9.length*22}px`
+    document.getElementById("medidor1").style.width = `${contador1.length*6}px`
+    document.getElementById("medidor2").style.width = `${contador2.length*6}px`
+    document.getElementById("medidor3").style.width = `${contador3.length*6}px`
+    document.getElementById("medidor4").style.width = `${contador4.length*6}px`
+    document.getElementById("medidor5").style.width = `${contador5.length*6}px`
+    document.getElementById("medidor6").style.width = `${contador6.length*6}px`
+    document.getElementById("medidor7").style.width = `${contador7.length*6}px`
+    document.getElementById("medidor8").style.width = `${contador8.length*6}px`
+    document.getElementById("medidor9").style.width = `${contador9.length*6}px`
 
 }
 
