@@ -150,10 +150,9 @@ function torredecontrol(){
         document.getElementById("medidor7").style.width = `0px`
         document.getElementById("medidor8").style.width = `0px`
         document.getElementById("medidor9").style.width = `0px`
-
         document.getElementById("current").className = "currentI"
-    }
 
+    }
 
 }
 
@@ -389,49 +388,49 @@ function velocidad1(){
         }
     })
 
-        tablacompleta2.forEach(x => {
+    tablacompleta2.forEach(x => {
         if(new Date() - x.momentodecreacion < 1000){
             contador2.push("xxx")
         }
     })
 
-        tablacompleta3.forEach(x => {
+    tablacompleta3.forEach(x => {
         if(new Date() - x.momentodecreacion < 1000){
             contador3.push("xxx")
         }
     })
 
-        tablacompleta4.forEach(x => {
+    tablacompleta4.forEach(x => {
         if(new Date() - x.momentodecreacion < 1000){
             contador4.push("xxx")
         }
     })
 
-        tablacompleta5.forEach(x => {
+    tablacompleta5.forEach(x => {
         if(new Date() - x.momentodecreacion < 1000){
             contador5.push("xxx")
         }
     })
 
-        tablacompleta6.forEach(x => {
+    tablacompleta6.forEach(x => {
         if(new Date() - x.momentodecreacion < 1000){
             contador6.push("xxx")
         }
     })
 
-        tablacompleta7.forEach(x => {
+    tablacompleta7.forEach(x => {
         if(new Date() - x.momentodecreacion < 1000){
             contador7.push("xxx")
         }
     })
 
-        tablacompleta8.forEach(x => {
+    tablacompleta8.forEach(x => {
         if(new Date() - x.momentodecreacion < 1000){
             contador8.push("xxx")
         }
     })
 
-        tablacompleta9.forEach(x => {
+    tablacompleta9.forEach(x => {
         if(new Date() - x.momentodecreacion < 1000){
             contador9.push("xxx")
         }
@@ -453,6 +452,8 @@ function papadeprueba1(){
 
     if(navegacion1.length > pendientes1.length -1){
         imprimirtodo()
+        let bloque1 = document.getElementById("informe1")
+        bloque1.className = "informeVl"
     }else{
         chuparmetadatos1(pendientes1[navegacion1.length])
     }
@@ -563,6 +564,8 @@ papadeprueba2()
 function papadeprueba2(){
     if(navegacion2.length > pendientes2.length -1){
         imprimirtodo()
+        let bloque1 = document.getElementById("informe2")
+        bloque1.className = "informeVl"
     }else{
         chuparmetadatos2(pendientes2[navegacion2.length])
     }
@@ -669,6 +672,8 @@ function scanpending3(){
 function papadeprueba3(){
     if(navegacion3.length > pendientes3.length -1){
         imprimirtodo()
+        let bloque1 = document.getElementById("informe3")
+        bloque1.className = "informeVl"
     }else{
         chuparmetadatos3(pendientes3[navegacion3.length])
     }
@@ -776,6 +781,8 @@ function scanpending4(){
 function papadeprueba4(){
     if(navegacion4.length > pendientes4.length -1){
         imprimirtodo()
+        let bloque1 = document.getElementById("informe4")
+        bloque1.className = "informeVl"
     }else{
         chuparmetadatos4(pendientes4[navegacion4.length])
     }
@@ -883,6 +890,8 @@ function scanpending5(){
 function papadeprueba5(){
     if(navegacion5.length > pendientes5.length -1){
         imprimirtodo()
+        let bloque1 = document.getElementById("informe5")
+        bloque1.className = "informeVl"
     }else{
         chuparmetadatos5(pendientes5[navegacion5.length])
     }
@@ -991,6 +1000,8 @@ function scanpending6(){
 function papadeprueba6(){
     if(navegacion6.length > pendientes6.length -1){
         imprimirtodo()
+        let bloque1 = document.getElementById("informe6")
+        bloque1.className = "informeVl"
     }else{
         chuparmetadatos6(pendientes6[navegacion6.length])
     }
@@ -1098,6 +1109,8 @@ function scanpending7(){
 function papadeprueba7(){
     if(navegacion7.length > pendientes7.length -1){
         imprimirtodo()
+        let bloque1 = document.getElementById("informe7")
+        bloque1.className = "informeVl"
     }else{
         chuparmetadatos7(pendientes7[navegacion7.length])
     }
@@ -1204,6 +1217,8 @@ function scanpending8(){
 function papadeprueba8(){
     if(navegacion8.length > pendientes8.length -1){
         imprimirtodo()
+        let bloque1 = document.getElementById("informe8")
+        bloque1.className = "informeVl"
     }else{
         chuparmetadatos8(pendientes8[navegacion8.length])
     }
