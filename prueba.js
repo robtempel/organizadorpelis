@@ -254,7 +254,7 @@ function imprimirparcial(){
     let fragmentoResult = ''
 
     tuti.forEach(item => {
-        fragmentoResult += `<text class="complete">${item.webkitRelativePath}/${item.size}/${item.type.toString().substring(0,5)}/${item.lastModifiedDate.getUTCFullYear()}-${("0" + (item.lastModifiedDate.getMonth()+1)).slice(-2)}-${("0" + item.lastModifiedDate.getDate()).slice(-2)} ${("0" + item.lastModifiedDate.getHours()).slice(-2)}:${("0" + item.lastModifiedDate.getMinutes()).slice(-2)}:${("0" + item.lastModifiedDate.getSeconds()).slice(-2)}|${("00" + item.lastModifiedDate.getMilliseconds()).slice(-3)}</text><br>`
+        fragmentoResult += `<text class="complete">${item.webkitRelativePath}/${item.size}/${item.type.replace(/\//g, "-")}/${item.lastModifiedDate.getUTCFullYear()}-${("0" + (item.lastModifiedDate.getMonth()+1)).slice(-2)}-${("0" + item.lastModifiedDate.getDate()).slice(-2)} ${("0" + item.lastModifiedDate.getHours()).slice(-2)}:${("0" + item.lastModifiedDate.getMinutes()).slice(-2)}:${("0" + item.lastModifiedDate.getSeconds()).slice(-2)}|${("00" + item.lastModifiedDate.getMilliseconds()).slice(-3)}</text><br>`
     })
 
     let contenedorresultado = document.getElementById("show")
@@ -329,7 +329,7 @@ hdex1.addEventListener("change", () => {
             tablacompleta1.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
-                tipo: "video",
+                tipo: peli.type.replace(/\//g, "-"),
                 anchovideo: "<*>",
                 altovideo: "<*>",
                 duracion: "<*>",
