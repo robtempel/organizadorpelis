@@ -525,7 +525,7 @@ hdex2.addEventListener("change", () => {
             tablacompleta2.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
-                tipo: "video",
+                tipo: peli.type.replace(/\//g, "-"),
                 anchovideo: "<*>",
                 altovideo: "<*>",
                 duracion: "<*>",
@@ -633,7 +633,7 @@ hdex3.addEventListener("change", () => {
             tablacompleta3.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
-                tipo: "video",
+                tipo: peli.type.replace(/\//g, "-"),
                 anchovideo: "<*>",
                 altovideo: "<*>",
                 duracion: "<*>",
@@ -742,7 +742,7 @@ hdex4.addEventListener("change", () => {
             tablacompleta4.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
-                tipo: "video",
+                tipo: peli.type.replace(/\//g, "-"),
                 anchovideo: "<*>",
                 altovideo: "<*>",
                 duracion: "<*>",
@@ -851,7 +851,7 @@ hdex5.addEventListener("change", () => {
             tablacompleta5.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
-                tipo: "video",
+                tipo: peli.type.replace(/\//g, "-"),
                 anchovideo: "<*>",
                 altovideo: "<*>",
                 duracion: "<*>",
@@ -961,7 +961,7 @@ hdex6.addEventListener("change", () => {
             tablacompleta6.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
-                tipo: "video",
+                tipo: peli.type.replace(/\//g, "-"),
                 anchovideo: "<*>",
                 altovideo: "<*>",
                 duracion: "<*>",
@@ -1070,7 +1070,7 @@ hdex7.addEventListener("change", () => {
             tablacompleta7.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
-                tipo: "video",
+                tipo: peli.type.replace(/\//g, "-"),
                 anchovideo: "<*>",
                 altovideo: "<*>",
                 duracion: "<*>",
@@ -1178,7 +1178,7 @@ hdex8.addEventListener("change", () => {
             tablacompleta8.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
-                tipo: "video",
+                tipo: peli.type.replace(/\//g, "-"),
                 anchovideo: "<*>",
                 altovideo: "<*>",
                 duracion: "<*>",
