@@ -54,6 +54,18 @@ let especimen = {
     alto: "",
 }
 
+document.getElementById("ejecutar1").addEventListener("click", () => {
+    imprimirparcial()
+})
+
+document.getElementById("ejecutar2").addEventListener("click", () => {
+    papusa()
+})
+
+document.getElementById("ejecutar3").addEventListener("click", () => {
+    imprimirparadatos()
+})
+
 const ultimos = []
 
 ultimos.push(especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen, especimen)
@@ -150,9 +162,10 @@ function torredecontrol(){
         document.getElementById("medidor7").style.width = `0px`
         document.getElementById("medidor8").style.width = `0px`
         document.getElementById("medidor9").style.width = `0px`
-        document.getElementById("current").className = "currentI"
 
+        document.getElementById("current").className = "currentI"
     }
+
 
 }
 
@@ -198,6 +211,24 @@ function gatillo(a){
         let bloque8 = document.getElementById("informe8")
         bloque8.className = "informeV"
     }
+}
+
+function imprimirparadatos(){
+
+    const tuti = archivos1.concat(archivos2, archivos3, archivos4, archivos5, archivos6, archivos7, archivos8)
+
+    let fragmentoResult = ''
+
+    tuti.forEach(item => {
+        fragmentoResult += `<text class="complete">${item.webkitRelativePath}*path/${item.name}*name/${item.size}*size/${item.type.toString().substring(0,5)}/${item.lastModifiedDate.getUTCFullYear()}-${("0" + (item.lastModifiedDate.getMonth()+1)).slice(-2)}-${("0" + item.lastModifiedDate.getDate()).slice(-2)} ${("0" + item.lastModifiedDate.getHours()).slice(-2)}:${("0" + item.lastModifiedDate.getMinutes()).slice(-2)}:${("0" + item.lastModifiedDate.getSeconds()).slice(-2)}|${("00" + item.lastModifiedDate.getMilliseconds()).slice(-3)}*ulmod</text><br>`
+    })
+
+    let contenedorresultado = document.getElementById("show")
+
+    contenedorresultado.innerHTML = ``;
+    contenedorresultado.innerHTML = fragmentoResult
+
+
 }
 
 function imprimirtodo(){
@@ -254,7 +285,7 @@ function imprimirparcial(){
     let fragmentoResult = ''
 
     tuti.forEach(item => {
-        fragmentoResult += `<text class="complete">${item.webkitRelativePath}/${item.size}/${item.type.replace(/\//g, "-")}/${item.lastModifiedDate.getUTCFullYear()}-${("0" + (item.lastModifiedDate.getMonth()+1)).slice(-2)}-${("0" + item.lastModifiedDate.getDate()).slice(-2)} ${("0" + item.lastModifiedDate.getHours()).slice(-2)}:${("0" + item.lastModifiedDate.getMinutes()).slice(-2)}:${("0" + item.lastModifiedDate.getSeconds()).slice(-2)}|${("00" + item.lastModifiedDate.getMilliseconds()).slice(-3)}</text><br>`
+        fragmentoResult += `<text class="complete">${item.webkitRelativePath}/${item.size}/${item.type.toString().substring(0,5)}/${item.lastModifiedDate.getUTCFullYear()}-${("0" + (item.lastModifiedDate.getMonth()+1)).slice(-2)}-${("0" + item.lastModifiedDate.getDate()).slice(-2)} ${("0" + item.lastModifiedDate.getHours()).slice(-2)}:${("0" + item.lastModifiedDate.getMinutes()).slice(-2)}:${("0" + item.lastModifiedDate.getSeconds()).slice(-2)}|${("00" + item.lastModifiedDate.getMilliseconds()).slice(-3)}</text><br>`
     })
 
     let contenedorresultado = document.getElementById("show")
@@ -329,7 +360,7 @@ hdex1.addEventListener("change", () => {
             tablacompleta1.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
-                tipo: peli.type.replace(/\//g, "-"),
+                tipo: "video",
                 anchovideo: "<*>",
                 altovideo: "<*>",
                 duracion: "<*>",
@@ -452,8 +483,6 @@ function papadeprueba1(){
 
     if(navegacion1.length > pendientes1.length -1){
         imprimirtodo()
-        let bloque1 = document.getElementById("informe1")
-        bloque1.className = "informeVl"
     }else{
         chuparmetadatos1(pendientes1[navegacion1.length])
     }
@@ -525,7 +554,7 @@ hdex2.addEventListener("change", () => {
             tablacompleta2.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
-                tipo: peli.type.replace(/\//g, "-"),
+                tipo: "video",
                 anchovideo: "<*>",
                 altovideo: "<*>",
                 duracion: "<*>",
@@ -564,8 +593,6 @@ papadeprueba2()
 function papadeprueba2(){
     if(navegacion2.length > pendientes2.length -1){
         imprimirtodo()
-        let bloque1 = document.getElementById("informe2")
-        bloque1.className = "informeVl"
     }else{
         chuparmetadatos2(pendientes2[navegacion2.length])
     }
@@ -633,7 +660,7 @@ hdex3.addEventListener("change", () => {
             tablacompleta3.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
-                tipo: peli.type.replace(/\//g, "-"),
+                tipo: "video",
                 anchovideo: "<*>",
                 altovideo: "<*>",
                 duracion: "<*>",
@@ -672,8 +699,6 @@ function scanpending3(){
 function papadeprueba3(){
     if(navegacion3.length > pendientes3.length -1){
         imprimirtodo()
-        let bloque1 = document.getElementById("informe3")
-        bloque1.className = "informeVl"
     }else{
         chuparmetadatos3(pendientes3[navegacion3.length])
     }
@@ -742,7 +767,7 @@ hdex4.addEventListener("change", () => {
             tablacompleta4.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
-                tipo: peli.type.replace(/\//g, "-"),
+                tipo: "video",
                 anchovideo: "<*>",
                 altovideo: "<*>",
                 duracion: "<*>",
@@ -781,8 +806,6 @@ function scanpending4(){
 function papadeprueba4(){
     if(navegacion4.length > pendientes4.length -1){
         imprimirtodo()
-        let bloque1 = document.getElementById("informe4")
-        bloque1.className = "informeVl"
     }else{
         chuparmetadatos4(pendientes4[navegacion4.length])
     }
@@ -851,7 +874,7 @@ hdex5.addEventListener("change", () => {
             tablacompleta5.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
-                tipo: peli.type.replace(/\//g, "-"),
+                tipo: "video",
                 anchovideo: "<*>",
                 altovideo: "<*>",
                 duracion: "<*>",
@@ -890,8 +913,6 @@ function scanpending5(){
 function papadeprueba5(){
     if(navegacion5.length > pendientes5.length -1){
         imprimirtodo()
-        let bloque1 = document.getElementById("informe5")
-        bloque1.className = "informeVl"
     }else{
         chuparmetadatos5(pendientes5[navegacion5.length])
     }
@@ -961,7 +982,7 @@ hdex6.addEventListener("change", () => {
             tablacompleta6.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
-                tipo: peli.type.replace(/\//g, "-"),
+                tipo: "video",
                 anchovideo: "<*>",
                 altovideo: "<*>",
                 duracion: "<*>",
@@ -1000,8 +1021,6 @@ function scanpending6(){
 function papadeprueba6(){
     if(navegacion6.length > pendientes6.length -1){
         imprimirtodo()
-        let bloque1 = document.getElementById("informe6")
-        bloque1.className = "informeVl"
     }else{
         chuparmetadatos6(pendientes6[navegacion6.length])
     }
@@ -1070,7 +1089,7 @@ hdex7.addEventListener("change", () => {
             tablacompleta7.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
-                tipo: peli.type.replace(/\//g, "-"),
+                tipo: "video",
                 anchovideo: "<*>",
                 altovideo: "<*>",
                 duracion: "<*>",
@@ -1109,8 +1128,6 @@ function scanpending7(){
 function papadeprueba7(){
     if(navegacion7.length > pendientes7.length -1){
         imprimirtodo()
-        let bloque1 = document.getElementById("informe7")
-        bloque1.className = "informeVl"
     }else{
         chuparmetadatos7(pendientes7[navegacion7.length])
     }
@@ -1178,7 +1195,7 @@ hdex8.addEventListener("change", () => {
             tablacompleta8.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
-                tipo: peli.type.replace(/\//g, "-"),
+                tipo: "video",
                 anchovideo: "<*>",
                 altovideo: "<*>",
                 duracion: "<*>",
@@ -1217,8 +1234,6 @@ function scanpending8(){
 function papadeprueba8(){
     if(navegacion8.length > pendientes8.length -1){
         imprimirtodo()
-        let bloque1 = document.getElementById("informe8")
-        bloque1.className = "informeVl"
     }else{
         chuparmetadatos8(pendientes8[navegacion8.length])
     }
@@ -1265,34 +1280,3 @@ function barradeavance8(){
     var div8 = document.getElementById('bam8');
     div8.style.width = `${(navegacion8.length * 100 / pendientes8.length) * 4}px`
 }
-
-
-
-
-document.addEventListener("keydown", (e) => {
-    if(e.key === "7"){
-        document.addEventListener("keydown", (e) => {
-            if(e.key === "8"){
-                document.addEventListener("keydown", (e) => {
-                    if(e.key === "9"){
-                        papusa()
-                    }
-                })
-            }
-        })
-    }
-})
-
-document.addEventListener("keydown", (e) => {
-    if(e.key === "4"){
-        document.addEventListener("keydown", (e) => {
-            if(e.key === "5"){
-                document.addEventListener("keydown", (e) => {
-                    if(e.key === "6"){
-                        imprimirparcial()
-                    }
-                })
-            }
-        })
-    }
-})
