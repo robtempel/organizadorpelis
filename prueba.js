@@ -166,7 +166,6 @@ function torredecontrol(){
         document.getElementById("current").className = "currentI"
     }
 
-
 }
 
 function gatillo(a){
@@ -300,42 +299,42 @@ function mostraravance(){
 
     let flujo = document.getElementById("flujo")
     flujo.innerHTML = `
-    <text class="flujonombre">${ultimos[35].name} ${ultimos[35].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[35].duracion}</text><text class="flujonombre"> ${ultimos[35].size}</text><text class="flujonombreR"> ${ultimos[35].ancho}x${ultimos[35].alto}</text><br>
-    <text class="flujonombre">${ultimos[34].name} ${ultimos[34].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[34].duracion}</text><text class="flujonombre"> ${ultimos[34].size}</text><text class="flujonombreR"> ${ultimos[34].ancho}x${ultimos[34].alto}</text><br>
-    <text class="flujonombre">${ultimos[33].name} ${ultimos[33].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[33].duracion}</text><text class="flujonombre"> ${ultimos[33].size}</text><text class="flujonombreR"> ${ultimos[33].ancho}x${ultimos[33].alto}</text><br>
-    <text class="flujonombre">${ultimos[32].name} ${ultimos[32].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[32].duracion}</text><text class="flujonombre"> ${ultimos[32].size}</text><text class="flujonombreR"> ${ultimos[32].ancho}x${ultimos[32].alto}</text><br>
-    <text class="flujonombre">${ultimos[31].name} ${ultimos[31].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[31].duracion}</text><text class="flujonombre"> ${ultimos[31].size}</text><text class="flujonombreR"> ${ultimos[31].ancho}x${ultimos[31].alto}</text><br>
-    <text class="flujonombre">${ultimos[30].name} ${ultimos[30].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[30].duracion}</text><text class="flujonombre"> ${ultimos[30].size}</text><text class="flujonombreR"> ${ultimos[30].ancho}x${ultimos[30].alto}</text><br>
-    <text class="flujonombre">${ultimos[29].name} ${ultimos[29].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[29].duracion}</text><text class="flujonombre"> ${ultimos[29].size}</text><text class="flujonombreR"> ${ultimos[29].ancho}x${ultimos[29].alto}</text><br>
-    <text class="flujonombre">${ultimos[28].name} ${ultimos[28].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[28].duracion}</text><text class="flujonombre"> ${ultimos[28].size}</text><text class="flujonombreR"> ${ultimos[28].ancho}x${ultimos[28].alto}</text><br>
-    <text class="flujonombre">${ultimos[27].name} ${ultimos[27].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[27].duracion}</text><text class="flujonombre"> ${ultimos[27].size}</text><text class="flujonombreR"> ${ultimos[27].ancho}x${ultimos[27].alto}</text><br>
-    <text class="flujonombre">${ultimos[26].name} ${ultimos[26].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[26].duracion}</text><text class="flujonombre"> ${ultimos[26].size}</text><text class="flujonombreR"> ${ultimos[26].ancho}x${ultimos[26].alto}</text><br>
-    <text class="flujonombre">${ultimos[25].name} ${ultimos[25].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[25].duracion}</text><text class="flujonombre"> ${ultimos[25].size}</text><text class="flujonombreR"> ${ultimos[25].ancho}x${ultimos[25].alto}</text><br>
-    <text class="flujonombre">${ultimos[24].name} ${ultimos[24].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[24].duracion}</text><text class="flujonombre"> ${ultimos[24].size}</text><text class="flujonombreR"> ${ultimos[24].ancho}x${ultimos[24].alto}</text><br>
-    <text class="flujonombre">${ultimos[23].name} ${ultimos[23].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[23].duracion}</text><text class="flujonombre"> ${ultimos[23].size}</text><text class="flujonombreR"> ${ultimos[23].ancho}x${ultimos[23].alto}</text><br>
-    <text class="flujonombre">${ultimos[22].name} ${ultimos[22].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[22].duracion}</text><text class="flujonombre"> ${ultimos[22].size}</text><text class="flujonombreR"> ${ultimos[22].ancho}x${ultimos[22].alto}</text><br>
-    <text class="flujonombre">${ultimos[21].name} ${ultimos[21].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[21].duracion}</text><text class="flujonombre"> ${ultimos[21].size}</text><text class="flujonombreR"> ${ultimos[21].ancho}x${ultimos[21].alto}</text><br>
-    <text class="flujonombre">${ultimos[20].name} ${ultimos[20].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[20].duracion}</text><text class="flujonombre"> ${ultimos[20].size}</text><text class="flujonombreR"> ${ultimos[20].ancho}x${ultimos[20].alto}</text><br>
-    <text class="flujonombre">${ultimos[19].name} ${ultimos[19].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[19].duracion}</text><text class="flujonombre"> ${ultimos[19].size}</text><text class="flujonombreR"> ${ultimos[19].ancho}x${ultimos[19].alto}</text><br>
-    <text class="flujonombre">${ultimos[18].name} ${ultimos[18].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[18].duracion}</text><text class="flujonombre"> ${ultimos[18].size}</text><text class="flujonombreR"> ${ultimos[18].ancho}x${ultimos[18].alto}</text><br>
-    <text class="flujonombre">${ultimos[17].name} ${ultimos[17].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[17].duracion}</text><text class="flujonombre"> ${ultimos[17].size}</text><text class="flujonombreR"> ${ultimos[17].ancho}x${ultimos[17].alto}</text><br>
-    <text class="flujonombre">${ultimos[16].name} ${ultimos[16].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[16].duracion}</text><text class="flujonombre"> ${ultimos[16].size}</text><text class="flujonombreR"> ${ultimos[16].ancho}x${ultimos[16].alto}</text><br>
-    <text class="flujonombre">${ultimos[15].name} ${ultimos[15].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[15].duracion}</text><text class="flujonombre"> ${ultimos[15].size}</text><text class="flujonombreR"> ${ultimos[15].ancho}x${ultimos[15].alto}</text><br>
-    <text class="flujonombre">${ultimos[14].name} ${ultimos[14].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[14].duracion}</text><text class="flujonombre"> ${ultimos[14].size}</text><text class="flujonombreR"> ${ultimos[14].ancho}x${ultimos[14].alto}</text><br>
-    <text class="flujonombre">${ultimos[13].name} ${ultimos[13].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[13].duracion}</text><text class="flujonombre"> ${ultimos[13].size}</text><text class="flujonombreR"> ${ultimos[13].ancho}x${ultimos[13].alto}</text><br>
-    <text class="flujonombre">${ultimos[12].name} ${ultimos[12].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[12].duracion}</text><text class="flujonombre"> ${ultimos[12].size}</text><text class="flujonombreR"> ${ultimos[12].ancho}x${ultimos[12].alto}</text><br>
-    <text class="flujonombre">${ultimos[11].name} ${ultimos[11].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[11].duracion}</text><text class="flujonombre"> ${ultimos[11].size}</text><text class="flujonombreR"> ${ultimos[11].ancho}x${ultimos[11].alto}</text><br>
-    <text class="flujonombre">${ultimos[10].name} ${ultimos[10].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[10].duracion}</text><text class="flujonombre"> ${ultimos[10].size}</text><text class="flujonombreR"> ${ultimos[10].ancho}x${ultimos[10].alto}</text><br>
-    <text class="flujonombre">${ultimos[9].name} ${ultimos[9].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[9].duracion}</text><text class="flujonombre"> ${ultimos[9].size}</text><text class="flujonombreR"> ${ultimos[9].ancho}x${ultimos[9].alto}</text><br>
-    <text class="flujonombre">${ultimos[8].name} ${ultimos[8].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[8].duracion}</text><text class="flujonombre"> ${ultimos[8].size}</text><text class="flujonombreR"> ${ultimos[8].ancho}x${ultimos[8].alto}</text><br>
-    <text class="flujonombre">${ultimos[7].name} ${ultimos[7].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[7].duracion}</text><text class="flujonombre"> ${ultimos[7].size}</text><text class="flujonombreR"> ${ultimos[7].ancho}x${ultimos[7].alto}</text><br>
-    <text class="flujonombre">${ultimos[6].name} ${ultimos[6].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[6].duracion}</text><text class="flujonombre"> ${ultimos[6].size}</text><text class="flujonombreR"> ${ultimos[6].ancho}x${ultimos[6].alto}</text><br>
-    <text class="flujonombre">${ultimos[5].name} ${ultimos[5].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[5].duracion}</text><text class="flujonombre"> ${ultimos[5].size}</text><text class="flujonombreR"> ${ultimos[5].ancho}x${ultimos[5].alto}</text><br>
-    <text class="flujonombre">${ultimos[4].name} ${ultimos[4].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[4].duracion}</text><text class="flujonombre"> ${ultimos[4].size}</text><text class="flujonombreR"> ${ultimos[4].ancho}x${ultimos[4].alto}</text><br>
-    <text class="flujonombre">${ultimos[3].name} ${ultimos[3].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[3].duracion}</text><text class="flujonombre"> ${ultimos[3].size}</text><text class="flujonombreR"> ${ultimos[3].ancho}x${ultimos[3].alto}</text><br>
-    <text class="flujonombre">${ultimos[2].name} ${ultimos[2].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[2].duracion}</text><text class="flujonombre"> ${ultimos[2].size}</text><text class="flujonombreR"> ${ultimos[2].ancho}x${ultimos[2].alto}</text><br>
-    <text class="flujonombre">${ultimos[1].name} ${ultimos[1].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[1].duracion}</text><text class="flujonombre"> ${ultimos[1].size}</text><text class="flujonombreR"> ${ultimos[1].ancho}x${ultimos[1].alto}</text><br>
-    <text class="flujonombre">${ultimos[0].name} ${ultimos[0].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[0].duracion}</text><text class="flujonombre"> ${ultimos[0].size}</text><text class="flujonombreR"> ${ultimos[0].ancho}x${ultimos[0].alto}</text>
+    <text class="flujonombre">${ultimos[35].name} ${ultimos[35].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[35].duracion}</text><text class="flujonombre"> ${ultimos[35].size}</text><text class="flujonombreR"> ${ultimos[35].ancho}-${ultimos[35].alto}</text><br>
+    <text class="flujonombre">${ultimos[34].name} ${ultimos[34].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[34].duracion}</text><text class="flujonombre"> ${ultimos[34].size}</text><text class="flujonombreR"> ${ultimos[34].ancho}-${ultimos[34].alto}</text><br>
+    <text class="flujonombre">${ultimos[33].name} ${ultimos[33].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[33].duracion}</text><text class="flujonombre"> ${ultimos[33].size}</text><text class="flujonombreR"> ${ultimos[33].ancho}-${ultimos[33].alto}</text><br>
+    <text class="flujonombre">${ultimos[32].name} ${ultimos[32].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[32].duracion}</text><text class="flujonombre"> ${ultimos[32].size}</text><text class="flujonombreR"> ${ultimos[32].ancho}-${ultimos[32].alto}</text><br>
+    <text class="flujonombre">${ultimos[31].name} ${ultimos[31].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[31].duracion}</text><text class="flujonombre"> ${ultimos[31].size}</text><text class="flujonombreR"> ${ultimos[31].ancho}-${ultimos[31].alto}</text><br>
+    <text class="flujonombre">${ultimos[30].name} ${ultimos[30].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[30].duracion}</text><text class="flujonombre"> ${ultimos[30].size}</text><text class="flujonombreR"> ${ultimos[30].ancho}-${ultimos[30].alto}</text><br>
+    <text class="flujonombre">${ultimos[29].name} ${ultimos[29].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[29].duracion}</text><text class="flujonombre"> ${ultimos[29].size}</text><text class="flujonombreR"> ${ultimos[29].ancho}-${ultimos[29].alto}</text><br>
+    <text class="flujonombre">${ultimos[28].name} ${ultimos[28].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[28].duracion}</text><text class="flujonombre"> ${ultimos[28].size}</text><text class="flujonombreR"> ${ultimos[28].ancho}-${ultimos[28].alto}</text><br>
+    <text class="flujonombre">${ultimos[27].name} ${ultimos[27].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[27].duracion}</text><text class="flujonombre"> ${ultimos[27].size}</text><text class="flujonombreR"> ${ultimos[27].ancho}-${ultimos[27].alto}</text><br>
+    <text class="flujonombre">${ultimos[26].name} ${ultimos[26].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[26].duracion}</text><text class="flujonombre"> ${ultimos[26].size}</text><text class="flujonombreR"> ${ultimos[26].ancho}-${ultimos[26].alto}</text><br>
+    <text class="flujonombre">${ultimos[25].name} ${ultimos[25].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[25].duracion}</text><text class="flujonombre"> ${ultimos[25].size}</text><text class="flujonombreR"> ${ultimos[25].ancho}-${ultimos[25].alto}</text><br>
+    <text class="flujonombre">${ultimos[24].name} ${ultimos[24].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[24].duracion}</text><text class="flujonombre"> ${ultimos[24].size}</text><text class="flujonombreR"> ${ultimos[24].ancho}-${ultimos[24].alto}</text><br>
+    <text class="flujonombre">${ultimos[23].name} ${ultimos[23].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[23].duracion}</text><text class="flujonombre"> ${ultimos[23].size}</text><text class="flujonombreR"> ${ultimos[23].ancho}-${ultimos[23].alto}</text><br>
+    <text class="flujonombre">${ultimos[22].name} ${ultimos[22].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[22].duracion}</text><text class="flujonombre"> ${ultimos[22].size}</text><text class="flujonombreR"> ${ultimos[22].ancho}-${ultimos[22].alto}</text><br>
+    <text class="flujonombre">${ultimos[21].name} ${ultimos[21].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[21].duracion}</text><text class="flujonombre"> ${ultimos[21].size}</text><text class="flujonombreR"> ${ultimos[21].ancho}-${ultimos[21].alto}</text><br>
+    <text class="flujonombre">${ultimos[20].name} ${ultimos[20].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[20].duracion}</text><text class="flujonombre"> ${ultimos[20].size}</text><text class="flujonombreR"> ${ultimos[20].ancho}-${ultimos[20].alto}</text><br>
+    <text class="flujonombre">${ultimos[19].name} ${ultimos[19].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[19].duracion}</text><text class="flujonombre"> ${ultimos[19].size}</text><text class="flujonombreR"> ${ultimos[19].ancho}-${ultimos[19].alto}</text><br>
+    <text class="flujonombre">${ultimos[18].name} ${ultimos[18].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[18].duracion}</text><text class="flujonombre"> ${ultimos[18].size}</text><text class="flujonombreR"> ${ultimos[18].ancho}-${ultimos[18].alto}</text><br>
+    <text class="flujonombre">${ultimos[17].name} ${ultimos[17].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[17].duracion}</text><text class="flujonombre"> ${ultimos[17].size}</text><text class="flujonombreR"> ${ultimos[17].ancho}-${ultimos[17].alto}</text><br>
+    <text class="flujonombre">${ultimos[16].name} ${ultimos[16].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[16].duracion}</text><text class="flujonombre"> ${ultimos[16].size}</text><text class="flujonombreR"> ${ultimos[16].ancho}-${ultimos[16].alto}</text><br>
+    <text class="flujonombre">${ultimos[15].name} ${ultimos[15].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[15].duracion}</text><text class="flujonombre"> ${ultimos[15].size}</text><text class="flujonombreR"> ${ultimos[15].ancho}-${ultimos[15].alto}</text><br>
+    <text class="flujonombre">${ultimos[14].name} ${ultimos[14].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[14].duracion}</text><text class="flujonombre"> ${ultimos[14].size}</text><text class="flujonombreR"> ${ultimos[14].ancho}-${ultimos[14].alto}</text><br>
+    <text class="flujonombre">${ultimos[13].name} ${ultimos[13].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[13].duracion}</text><text class="flujonombre"> ${ultimos[13].size}</text><text class="flujonombreR"> ${ultimos[13].ancho}-${ultimos[13].alto}</text><br>
+    <text class="flujonombre">${ultimos[12].name} ${ultimos[12].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[12].duracion}</text><text class="flujonombre"> ${ultimos[12].size}</text><text class="flujonombreR"> ${ultimos[12].ancho}-${ultimos[12].alto}</text><br>
+    <text class="flujonombre">${ultimos[11].name} ${ultimos[11].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[11].duracion}</text><text class="flujonombre"> ${ultimos[11].size}</text><text class="flujonombreR"> ${ultimos[11].ancho}-${ultimos[11].alto}</text><br>
+    <text class="flujonombre">${ultimos[10].name} ${ultimos[10].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[10].duracion}</text><text class="flujonombre"> ${ultimos[10].size}</text><text class="flujonombreR"> ${ultimos[10].ancho}-${ultimos[10].alto}</text><br>
+    <text class="flujonombre">${ultimos[9].name} ${ultimos[9].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[9].duracion}</text><text class="flujonombre"> ${ultimos[9].size}</text><text class="flujonombreR"> ${ultimos[9].ancho}-${ultimos[9].alto}</text><br>
+    <text class="flujonombre">${ultimos[8].name} ${ultimos[8].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[8].duracion}</text><text class="flujonombre"> ${ultimos[8].size}</text><text class="flujonombreR"> ${ultimos[8].ancho}-${ultimos[8].alto}</text><br>
+    <text class="flujonombre">${ultimos[7].name} ${ultimos[7].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[7].duracion}</text><text class="flujonombre"> ${ultimos[7].size}</text><text class="flujonombreR"> ${ultimos[7].ancho}-${ultimos[7].alto}</text><br>
+    <text class="flujonombre">${ultimos[6].name} ${ultimos[6].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[6].duracion}</text><text class="flujonombre"> ${ultimos[6].size}</text><text class="flujonombreR"> ${ultimos[6].ancho}-${ultimos[6].alto}</text><br>
+    <text class="flujonombre">${ultimos[5].name} ${ultimos[5].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[5].duracion}</text><text class="flujonombre"> ${ultimos[5].size}</text><text class="flujonombreR"> ${ultimos[5].ancho}-${ultimos[5].alto}</text><br>
+    <text class="flujonombre">${ultimos[4].name} ${ultimos[4].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[4].duracion}</text><text class="flujonombre"> ${ultimos[4].size}</text><text class="flujonombreR"> ${ultimos[4].ancho}-${ultimos[4].alto}</text><br>
+    <text class="flujonombre">${ultimos[3].name} ${ultimos[3].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[3].duracion}</text><text class="flujonombre"> ${ultimos[3].size}</text><text class="flujonombreR"> ${ultimos[3].ancho}-${ultimos[3].alto}</text><br>
+    <text class="flujonombre">${ultimos[2].name} ${ultimos[2].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[2].duracion}</text><text class="flujonombre"> ${ultimos[2].size}</text><text class="flujonombreR"> ${ultimos[2].ancho}-${ultimos[2].alto}</text><br>
+    <text class="flujonombre">${ultimos[1].name} ${ultimos[1].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[1].duracion}</text><text class="flujonombre"> ${ultimos[1].size}</text><text class="flujonombreR"> ${ultimos[1].ancho}-${ultimos[1].alto}</text><br>
+    <text class="flujonombre">${ultimos[0].name} ${ultimos[0].mod.toString().substring(4, 15)}</text><text class="flujonombreR"> ${ultimos[0].duracion}</text><text class="flujonombre"> ${ultimos[0].size}</text><text class="flujonombreR"> ${ultimos[0].ancho}-${ultimos[0].alto}</text>
     `
 }
 
@@ -356,7 +355,7 @@ hdex1.addEventListener("change", () => {
 
 
     for(peli of archivos1){
-        if(peli.type.includes('video')){
+        if(peli.type.includes('video')||peli.type.includes('audio')){
             tablacompleta1.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
@@ -482,6 +481,7 @@ function velocidad1(){
 function papadeprueba1(){
 
     if(navegacion1.length > pendientes1.length -1){
+        document.getElementById("informe1").className = "informeC"
         imprimirtodo()
     }else{
         chuparmetadatos1(pendientes1[navegacion1.length])
@@ -550,7 +550,7 @@ hdex2.addEventListener("change", () => {
     //archivos2.reverse()
 
     for(peli of archivos2){
-        if(peli.type.includes('video')){
+        if(peli.type.includes('video')||peli.type.includes('audio')){
             tablacompleta2.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
@@ -592,6 +592,7 @@ papadeprueba2()
 
 function papadeprueba2(){
     if(navegacion2.length > pendientes2.length -1){
+        document.getElementById("informe2").className = "informeC"
         imprimirtodo()
     }else{
         chuparmetadatos2(pendientes2[navegacion2.length])
@@ -656,7 +657,7 @@ hdex3.addEventListener("change", () => {
     //archivos3.reverse()
 
     for(peli of archivos3){
-        if(peli.type.includes('video')){
+        if(peli.type.includes('video')||peli.type.includes('audio')){
             tablacompleta3.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
@@ -698,6 +699,7 @@ function scanpending3(){
 
 function papadeprueba3(){
     if(navegacion3.length > pendientes3.length -1){
+        document.getElementById("informe3").className = "informeC"
         imprimirtodo()
     }else{
         chuparmetadatos3(pendientes3[navegacion3.length])
@@ -763,7 +765,7 @@ hdex4.addEventListener("change", () => {
     //archivos4.reverse()
 
     for(peli of archivos4){
-        if(peli.type.includes('video')){
+        if(peli.type.includes('video')||peli.type.includes('audio')){
             tablacompleta4.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
@@ -805,6 +807,7 @@ function scanpending4(){
 
 function papadeprueba4(){
     if(navegacion4.length > pendientes4.length -1){
+        document.getElementById("informe4").className = "informeC"
         imprimirtodo()
     }else{
         chuparmetadatos4(pendientes4[navegacion4.length])
@@ -870,7 +873,7 @@ hdex5.addEventListener("change", () => {
     //archivos5.reverse()
 
     for(peli of archivos5){
-        if(peli.type.includes('video')){
+        if(peli.type.includes('video')||peli.type.includes('audio')){
             tablacompleta5.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
@@ -912,6 +915,7 @@ function scanpending5(){
 
 function papadeprueba5(){
     if(navegacion5.length > pendientes5.length -1){
+        document.getElementById("informe5").className = "informeC"
         imprimirtodo()
     }else{
         chuparmetadatos5(pendientes5[navegacion5.length])
@@ -978,7 +982,7 @@ hdex6.addEventListener("change", () => {
     //archivos6.reverse()
 
     for(peli of archivos6){
-        if(peli.type.includes('video')){
+        if(peli.type.includes('video')||peli.type.includes('audio')){
             tablacompleta6.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
@@ -1020,6 +1024,7 @@ function scanpending6(){
 
 function papadeprueba6(){
     if(navegacion6.length > pendientes6.length -1){
+        document.getElementById("informe6").className = "informeC"
         imprimirtodo()
     }else{
         chuparmetadatos6(pendientes6[navegacion6.length])
@@ -1085,7 +1090,7 @@ hdex7.addEventListener("change", () => {
     //archivos7.reverse()
 
     for(peli of archivos7){
-        if(peli.type.includes('video')){
+        if(peli.type.includes('video')||peli.type.includes('audio')){
             tablacompleta7.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
@@ -1127,6 +1132,7 @@ function scanpending7(){
 
 function papadeprueba7(){
     if(navegacion7.length > pendientes7.length -1){
+        document.getElementById("informe7").className = "informeC"
         imprimirtodo()
     }else{
         chuparmetadatos7(pendientes7[navegacion7.length])
@@ -1191,7 +1197,7 @@ hdex8.addEventListener("change", () => {
     //archivos8.reverse()
 
     for(peli of archivos8){
-        if(peli.type.includes('video')){
+        if(peli.type.includes('video')||peli.type.includes('audio')){
             tablacompleta8.push({
                 route: peli.webkitRelativePath,
                 tamano: peli.size,
@@ -1233,6 +1239,7 @@ function scanpending8(){
 
 function papadeprueba8(){
     if(navegacion8.length > pendientes8.length -1){
+        document.getElementById("informe8").className = "informeC"
         imprimirtodo()
     }else{
         chuparmetadatos8(pendientes8[navegacion8.length])
