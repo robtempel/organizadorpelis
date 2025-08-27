@@ -217,13 +217,13 @@ body{
 }
 
 .informeC{
-  background-color: rgb(114, 123, 255);
   display: inline-block;
   position: relative;
   bottom: 20px;
   border-radius: 5px;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
+  background-color: rgba(0, 255, 0, 0.938);
   color: white;
   width: 70px;
   padding-top: 5px;
